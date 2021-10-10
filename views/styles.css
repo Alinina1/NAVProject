@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+body{
+    background-color: #D6C7B2;
+}
+
+.panel{
+    position: absolute;
+    width: 100%;
+    height: 20;
+    left: 0px;
+    top: 0px;
+    background-color: #D6C7B2;
+    border-bottom: 2px solid #494440;
+}
+
+
+/* Style the links inside the navigation bar */
+.panel a {
+    float: left;
+    color: #494440;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Change the color of links on hover */
+.panel a:hover {
+    background-color: #9e8976;
+    color: black;
+}
+.panel .logo:hover {
+    background-color: #D6C7B2;
+    color: black;
+}
+/* Add a color to the active/current link */
+.panel a.logo {
+    width: 200px;
+    height: 20px;
+    padding-left: 80px;
+    background-image: url("img/logo.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+}
+
+/*Всплывающие окошки + */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: #494440;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.panel a:hover, .dropdown:hover .dropbtn {
+    background-color: #9e8976;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #9e8976;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 13px;
+}
+
+.dropdown-content a:hover {
+    background-color: #9e8976;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*Всплывающие окошки - */
+
+/*Кнопка для входа в аккаунт +*/
+.btn {
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    cursor: pointer;
+    
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 13px;
+
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+  }
+
+.fourth {
+    margin-top: 6px;
+    border-color: #75859e;
+    color: #fff;
+    background-image: -webkit-linear-gradient(45deg, #75859e 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #75859e 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+  }
+  .fourth:hover {
+    background-position: 0;
+  }
+
+/*Кнопка для входа в аккаунт -*/
