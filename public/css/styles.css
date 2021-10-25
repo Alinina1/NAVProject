@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
 body{
-    background-color: #D6C7B2;
+    /* background-color: #D6C7B2; */
+    min-height: 100%;
+    margin:0;
+    padding:0;
 }
+
+html{
+    margin:0;
+    padding:0;
+}
+
+/* ШАПКА +++*/
 
 .panel{
     position: absolute;
@@ -14,8 +24,6 @@ body{
     border-bottom: 2px solid #494440;
 }
 
-
-/* Style the links inside the navigation bar */
 .panel a {
     float: left;
     color: #494440;
@@ -26,7 +34,6 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Change the color of links on hover */
 .panel a:hover {
     background-color: #9e8976;
     color: black;
@@ -35,12 +42,12 @@ body{
     background-color: #D6C7B2;
     color: black;
 }
-/* Add a color to the active/current link */
+
 .panel a.logo {
     width: 200px;
     height: 20px;
     padding-left: 80px;
-    background-image: url("img/logo.png");
+    background-image: url("../img/logo.png");
     background-size: 100px;
     background-repeat: no-repeat;
     background-position-y: center;
@@ -62,11 +69,9 @@ body{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
-
 .panel a:hover, .dropdown:hover .dropbtn {
     background-color: #9e8976;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -74,7 +79,6 @@ body{
     min-width: 160px;
     z-index: 1;
 }
-
 .dropdown-content a {
     float: none;
     color: white;
@@ -84,11 +88,9 @@ body{
     text-align: left;
     font-size: 13px;
 }
-
 .dropdown-content a:hover {
     background-color: #9e8976;
 }
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -134,3 +136,96 @@ body{
   }
 
 /*Кнопка для входа в аккаунт -*/
+
+/* ШАПКА ---*/
+
+
+/* СТРАНИЦА О СЕБЕ +++ */
+
+/*страница 1*/
+.page1{
+    /*background-image: url("../img/school-fon1.jpg");
+    background-size: 100%;
+    height: 709px;
+    background-repeat: repeat-x;
+    */
+    background-color: #D6C7B2;
+    background-size: auto;
+    height: 300px;
+    position: relative;
+}
+.fone1 {    
+    padding: 2em 1.5em;
+    text-decoration: none;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    color: #7c695b;
+    position: absolute;
+}
+#fio-anim:hover{
+    font-size: 70px;
+}
+#info_about_me{
+    width: 700px;
+    padding: 3em 0em;
+    text-decoration: none;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #413833;
+}
+.foto_main{
+    display: block;
+}
+.foto_main img {
+    position: absolute;
+    right: 100px;
+    height: 200%;
+}
+
+/*стрaница 2*/
+.page2{
+    margin-top: 200px;
+    background-color: white;
+    height: 450px;
+    text-align: left;
+    position: relative;
+    z-index: -1;
+}
+.page2 img {
+    left: 100px;
+    bottom: 10px;
+    padding-left: 100px;
+    float: left;
+    display: block;
+}
+#info2 {
+    width: 700px;
+    display: inline-block;
+    padding-top: 200px;
+    padding-left: 150px;
+
+    text-decoration: none;
+    text-align: left;
+    font-family: 'Bad Script', cursive;
+    font-size: 25px;
+}
+#info2-1{
+    text-align: right;
+}
+
+/*стрaница 3*/
+.page3{
+    background-color: #D6C7B2;
+    background-size: auto;
+    height: 509px;
+}
+
+.page4{
+    background-color: white;
+    height: 450px;
+    text-align: left;
+}
+/* СТРАНИЦА О СЕБЕ --- */
