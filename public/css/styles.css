@@ -135,6 +135,9 @@ html{
     background-position: 0;
   }
 
+  #guest-kniga{
+      margin-right: 140px;
+  }
 /*Кнопка для входа в аккаунт -*/
 
 /* ШАПКА ---*/
@@ -201,6 +204,13 @@ html{
     float: left;
     display: block;
 }
+#zapyataya{
+    position: absolute;
+    top: 190px;
+    left: 470px;
+    font-size: 90px;
+    transform: rotate(180deg);
+}
 #info2 {
     width: 700px;
     display: inline-block;
@@ -213,7 +223,10 @@ html{
     font-size: 25px;
 }
 #info2-1{
-    text-align: right;
+    margin: 0;
+    padding-left: 1100px;
+    text-align: left;
+    font-size: 20px;
 }
 
 /*стрaница 3*/
@@ -221,6 +234,25 @@ html{
     background-color: #D6C7B2;
     background-size: auto;
     height: 509px;
+}
+
+#info4{
+    display: inline-block;
+    float: left;
+    width: 800px;
+    height: 300px;
+    margin-top: 80px;
+    margin-left: 60px;
+
+    padding: 30px;
+    padding-top: 70px;
+    border: 5px double black;
+    text-align: center;
+    font-size: 20px;
+}
+
+.page3 img{
+    display: inline-block;
 }
 
 .page4{

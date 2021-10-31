@@ -4,9 +4,15 @@
   "description": "mom app",
   "main": "server.js",
   "dependencies": {
+    "bcryptjs": "*",
     "body-parser": "^1.19.0",
+    "cors": "*",
     "ejs": "^3.1.6",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "jsonwebtoken": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-jwt": "*"
   },
   "devDependencies": {},
   "scripts": {
