@@ -17,7 +17,7 @@ html{
 .panel{
     position: absolute;
     width: 100%;
-    height: 20;
+    /*height: 20px;*/
     left: 0px;
     top: 0px;
     background-color: #D6C7B2;
@@ -60,7 +60,7 @@ html{
     overflow: hidden;
 }
 .dropdown .dropbtn {
-    font-size: 17px;    
+    font-size: 17px;
     border: none;
     outline: none;
     color: #494440;
@@ -103,11 +103,11 @@ html{
     border: 2px solid #e74c3c;
     border-radius: 0.6em;
     cursor: pointer;
-    
+
     display: flex;
     -webkit-align-self: center;
-        -ms-flex-item-align: center;
-            align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
     font-size: 13px;
 
     padding: 0.5em 1.5em;
@@ -120,7 +120,7 @@ html{
 .btn:hover, .btn:focus {
     color: #fff;
     outline: 0;
-  }
+}
 
 .fourth {
     margin-top: 6px;
@@ -130,11 +130,14 @@ html{
     background-image: linear-gradient(45deg, #75859e 50%, transparent 50%);
     background-position: 100%;
     background-size: 400%;
-  }
-  .fourth:hover {
+}
+.fourth:hover {
     background-position: 0;
-  }
+}
 
+#guest-kniga{
+    margin-right: 140px;
+}
 /*Кнопка для входа в аккаунт -*/
 
 /* ШАПКА ---*/
@@ -154,7 +157,7 @@ html{
     height: 300px;
     position: relative;
 }
-.fone1 {    
+.fone1 {
     padding: 2em 1.5em;
     text-decoration: none;
     text-align: left;
@@ -201,6 +204,13 @@ html{
     float: left;
     display: block;
 }
+#zapyataya{
+    position: absolute;
+    top: 190px;
+    left: 470px;
+    font-size: 90px;
+    transform: rotate(180deg);
+}
 #info2 {
     width: 700px;
     display: inline-block;
@@ -213,7 +223,10 @@ html{
     font-size: 25px;
 }
 #info2-1{
-    text-align: right;
+    margin: 0;
+    padding-left: 1100px;
+    text-align: left;
+    font-size: 20px;
 }
 
 /*стрaница 3*/
@@ -221,6 +234,25 @@ html{
     background-color: #D6C7B2;
     background-size: auto;
     height: 509px;
+}
+
+#info4{
+    display: inline-block;
+    float: left;
+    width: 800px;
+    height: 300px;
+    margin-top: 80px;
+    margin-left: 60px;
+
+    padding: 30px;
+    padding-top: 70px;
+    border: 5px double black;
+    text-align: center;
+    font-size: 20px;
+}
+
+.page3 img{
+    display: inline-block;
 }
 
 .page4{
