@@ -19,6 +19,10 @@ app.get('/home', function (req, res){
 app.get('/about', function (req, res){
   res.render('about');
 })
+
+app.get('/merits', function (req, res){
+  res.render('merits');
+})
 //post-запрос
 /*
 app.post('/home',urlencodedParser, function (req, res){
