@@ -233,26 +233,33 @@ html{
 .page3{
     background-color: #D6C7B2;
     background-size: auto;
-    height: 509px;
+    height: 600px;
 }
 
 #info4{
     display: inline-block;
     float: left;
-    width: 800px;
-    height: 300px;
-    margin-top: 80px;
+    width: 620px;
+    height: 400px;
+    margin-top: 50px;
     margin-left: 60px;
+    margin-right: 60px;
 
+    background-color: #7c695b;
     padding: 30px;
     padding-top: 70px;
-    border: 5px double black;
     text-align: center;
+    font-family: 'Roboto',Arial,sans-serif;
     font-size: 20px;
+    line-height: 1.55;
+    font-size: 20px;
+    color: white;
 }
 
 .page3 img{
     display: inline-block;
+    margin-top: 50px;
+    margin-left: 20px;
 }
 
 .page4{
@@ -261,3 +268,32 @@ html{
     text-align: left;
 }
 /* СТРАНИЦА О СЕБЕ --- */
+
+/* СТРАНИЦА ЗАСЛУГИ +++ */
+.merits_main{
+    background-color: #D6C7B2;
+    background-size: auto;
+    height: 500px;
+    position: relative;
+    padding: 50px;
+}
+
+#merit_box{
+    position: absolute;
+    child-align: middle;
+    margin: 50px;
+    width: 200px;
+    height: 150px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Roboto',Arial,sans-serif;
+}
+
+#merit_box img:hover{
+    height: 70%;
+}
+#merit_box hover{
+    text-shadow: black 1px 0 10px;
+    font-size: 60px;
+}
+/* СТРАНИЦА ЗАСЛУГИ --- */
