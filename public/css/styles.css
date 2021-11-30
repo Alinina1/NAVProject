@@ -292,8 +292,8 @@ html{
 #merit_box img:hover{
     height: 70%;
 }
-#merit_box hover{
+#merit_box:hover{
     text-shadow: black 1px 0 10px;
-    font-size: 60px;
+    font-size: 35px;
 }
 /* СТРАНИЦА ЗАСЛУГИ --- */
