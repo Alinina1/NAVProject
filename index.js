@@ -1,11 +1,14 @@
 const express = require('express');
 //const bodyParser = require('body-parser');//для post-запроса
-
+const helmet = require('helmet');
+const compression = require('compression');
 const app = express();
 //const urlencodedParser = bodyParser.urlencoded({ extended: false }); //для post-запроса
 
 app.set('view engine', 'ejs');
 
+app.use(helmet());
+app.use(compression());
 app.use(express.static(__dirname +'/public/'));
 
 app.get('/', function (req, res){
