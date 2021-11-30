@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6da19577-42ec-4381-b75d-0c781ab4e3a9" name="Changes" comment="feature: add merits styles">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +43,7 @@
       <workItem from="1638203130758" duration="1640000" />
       <workItem from="1638205830458" duration="3312000" />
       <workItem from="1638213869437" duration="1408000" />
-      <workItem from="1638215292599" duration="5946000" />
+      <workItem from="1638215292599" duration="6191000" />
     </task>
     <task id="LOCAL-00001" summary="feature: add merits styles">
       <created>1638281322192</created>
