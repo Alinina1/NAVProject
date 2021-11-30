@@ -6,6 +6,7 @@ const app = express();
 //const urlencodedParser = bodyParser.urlencoded({ extended: false }); //для post-запроса
 
 app.set('view engine', 'ejs');
+app.set('port', (process.env.PORT || 3000));
 
 app.use(helmet());
 app.use(compression());
@@ -34,4 +35,4 @@ app.post('/home',urlencodedParser, function (req, res){
   res.render('home');
 }) 
 */
-app.listen(3000, () => console.log('Server is running'));
+app.listen(app.get('port'), () => console.log('Server is running'));
