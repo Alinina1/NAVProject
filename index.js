@@ -27,6 +27,14 @@ app.get('/about', function (req, res){
 app.get('/merits', function (req, res){
   res.render('merits');
 })
+
+app.get('/photoalbum', function (req, res){
+  res.render('photoalbum');
+})
+
+app.get('/dictionary', function (req, res){
+  res.render('dictionary');
+})
 //post-запрос
 /*
 app.post('/home',urlencodedParser, function (req, res){
