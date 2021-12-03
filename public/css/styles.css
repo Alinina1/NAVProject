@@ -279,12 +279,14 @@ html{
 }
 
 #merit_box{
-    position: absolute;
+    display:inline;
+    float:left;
     child-align: middle;
     margin: 50px;
     width: 200px;
     height: 150px;
-    color: white;
+    color: black;
+    text-decoration: none;
     font-size: 30px;
     font-family: 'Roboto',Arial,sans-serif;
 }
@@ -296,4 +298,79 @@ html{
     text-shadow: black 1px 0 10px;
     font-size: 35px;
 }
+
+.merit{
+    background-color: white;
+    background-size: auto;
+    height: 600px;
+    margin: 40px;
+}
+
+#merit_name{
+    padding: 25px;
+    font-size: 35px;
+    font-family: 'Roboto',Arial,sans-serif;
+}
+
+#merit_photo{
+    display:inline;
+    float:left;
+    margin: 50px;
+}
+
+#merit_desk{
+    display:inline;
+    float:right;
+    margin: 20px;
+    background-color: #7c695b;
+    height: 400px;
+    width: 600px;
+
+    padding: 30px;
+    color: white;
+    font-size: 20px;
+}
 /* СТРАНИЦА ЗАСЛУГИ --- */
+
+
+.card {
+    /*background-color: #fff;
+    min-width: 100%;
+    min-height: 200px;
+    display: flex;
+    overflow-x: auto;
+     */
+    width: 1349px;
+    height:645px;
+    overflow: hidden;
+    overflow-x: scroll;
+    background: white;
+    white-space:nowrap;
+}
+
+/*
+.card::-webkit-scrollbar {
+    display: none;
+}
+ */
+
+.card--content {
+    /*
+    background-color: #D6C7B2;
+    min-width: 1200px;
+    height: 630px;
+    overflow: hidden;
+     */
+    display: inline-block;
+    vertical-align: top;
+    width: 650px;
+    height:645px;
+    background: #D6C7B2;
+}
+
+.card--content img{
+    width:auto;
+    height:100%;
+    display: block;
+    margin: 0 auto;
+}

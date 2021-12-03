@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6da19577-42ec-4381-b75d-0c781ab4e3a9" name="Changes" comment="feature: add merits styles">
+      <change afterPath="$PROJECT_DIR$/views/dictionary.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/photoalbum.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/about.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/about.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/blocks/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/blocks/header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/merits.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/merits.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +35,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\m8rin\Desktop\web\my mom\views" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -44,7 +55,7 @@
       <workItem from="1638203130758" duration="1640000" />
       <workItem from="1638205830458" duration="3312000" />
       <workItem from="1638213869437" duration="1408000" />
-      <workItem from="1638215292599" duration="7632000" />
+      <workItem from="1638215292599" duration="17944000" />
     </task>
     <task id="LOCAL-00001" summary="feature: add merits styles">
       <created>1638281322192</created>
