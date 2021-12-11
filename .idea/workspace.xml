@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6da19577-42ec-4381-b75d-0c781ab4e3a9" name="Changes" comment="feature: add photoalbum page">
+    <list default="true" id="6da19577-42ec-4381-b75d-0c781ab4e3a9" name="Changes" comment="feature: add bootstrap changes">
+      <change afterPath="$PROJECT_DIR$/routes/about.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/dictionary.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/merits.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/photoalbum.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_30_11_2021_0_49_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_30_11_2021_0_49__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/blocks/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/blocks/header.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +29,9 @@
     <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectId" id="21bHzO8AtzVLwOnme7gc44FRiC7" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -51,7 +61,8 @@
       <workItem from="1638203130758" duration="1640000" />
       <workItem from="1638205830458" duration="3312000" />
       <workItem from="1638213869437" duration="1408000" />
-      <workItem from="1638215292599" duration="19700000" />
+      <workItem from="1638215292599" duration="21288000" />
+      <workItem from="1638953355253" duration="8179000" />
     </task>
     <task id="LOCAL-00001" summary="feature: add merits styles">
       <created>1638281322192</created>
@@ -74,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638513777618</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feature: add bootstrap changes">
+      <created>1638515049790</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1638515049790</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +125,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feature: add merits styles" />
     <MESSAGE value="feature: add photoalbum page" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature: add photoalbum page" />
+    <MESSAGE value="feature: add bootstrap changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: add bootstrap changes" />
   </component>
 </project>
