@@ -5,6 +5,8 @@ body{
     min-height: 100%;
     margin:0;
     padding:0;
+    background-color: #D6C7B2;
+    background-size: 100%;
 }
 
 html{
@@ -120,6 +122,16 @@ html{
 .btn:hover, .btn:focus {
     color: #fff;
     outline: 0;
+}
+
+.btn a{
+    margin: 0;
+    padding: 0;
+}
+.btn a:hover{
+    margin: 0;
+    padding: 0;
+    background-color: #75859e;
 }
 
 .fourth {
@@ -261,12 +273,6 @@ html{
     margin-top: 50px;
     margin-left: 20px;
 }
-
-.page4{
-    background-color: white;
-    height: 450px;
-    text-align: left;
-}
 /* СТРАНИЦА О СЕБЕ --- */
 
 /* СТРАНИЦА ЗАСЛУГИ +++ */
@@ -332,14 +338,8 @@ html{
 }
 /* СТРАНИЦА ЗАСЛУГИ --- */
 
-
+/* СТРАНИЦА ФОТОАЛЬБОМ +++*/
 .card {
-    /*background-color: #fff;
-    min-width: 100%;
-    min-height: 200px;
-    display: flex;
-    overflow-x: auto;
-     */
     width: 1349px;
     height:645px;
     overflow: hidden;
@@ -348,19 +348,7 @@ html{
     white-space:nowrap;
 }
 
-/*
-.card::-webkit-scrollbar {
-    display: none;
-}
- */
-
 .card--content {
-    /*
-    background-color: #D6C7B2;
-    min-width: 1200px;
-    height: 630px;
-    overflow: hidden;
-     */
     display: inline-block;
     vertical-align: top;
     width: 650px;
@@ -374,3 +362,58 @@ html{
     display: block;
     margin: 0 auto;
 }
+/* СТРАНИЦА ФОТОАЛЬБОМ --- */
+
+/* СТРАНИЦА ВХОДА +++ */
+.auth{
+    margin: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.inputs {
+    display: inline-block;
+    text-align: left;
+    font-family: 'Roboto',Arial,sans-serif;
+    width: 400px;
+    height: 420px;
+    background-color: white;
+    box-shadow: 0 2px 40px 0 rgb(0 0 0 / 10%);
+    border-radius: 4px;
+}
+#login_main_label{
+    font-size: 27px;
+    text-align: center;
+    margin-top: 15px;
+    padding: 25px;
+}
+
+.login_label{
+    font-size: 20px;
+    text-align: left;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.input_form{
+    margin-left: 40px;
+    width: 80%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+.input_button{
+    margin: 40px;
+    background-color: #75859e; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 80%;
+}
+/* СТРАНИЦА ВХОДА --- */

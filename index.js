@@ -10,6 +10,7 @@ const photoalbumRoutes = require('./routes/photoalbum');
 const meritsRoutes = require('./routes/merits');
 const aboutRoutes = require('./routes/about');
 const homeRoutes = require('./routes/home');
+const authRoutes = require('./routes/auth');
 
 app.set('view engine', 'ejs');
 
@@ -23,6 +24,7 @@ app.use('/about', aboutRoutes);
 app.use('/merits', meritsRoutes);
 app.use('/photoalbum', photoalbumRoutes);
 app.use('/dictionary', dictionaryRoutes);
+app.use('/auth', authRoutes);
 
 async function start(){
     try {

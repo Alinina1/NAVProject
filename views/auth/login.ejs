@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>NAV</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/styles.css"/>
+    <script src="../script/script.js"></script>
+</head>
+
+<body>
+    <%- include ('../blocks/header.ejs') %>
+    <p>Выступ</p>
+    <div class="auth">
+        <form class="inputs" name="login" method="POST" action="/">
+            <div id="login_main_label">Вход</div>
+            <div class="login_label">Ваш логин</div>
+            <label>
+                <input class="input_form" type="text" name="name" required="required">
+            </label>
+            <div class="login_label">Ваш пароль</div>
+            <label>
+                <input class="input_form" type="password" name="password" required="required">
+            </label>
+            <br>
+            <input class="input_button" type="submit" name="submit_btn" value="Отправить">
+        </form>
+    </div>
+
+</body>
+
+</html>
