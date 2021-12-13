@@ -1,37 +1,43 @@
 <div class="panel">
-  <a class="logo" href="/"></a>
-  
-  <div class="dropdown">
-      <button class="dropbtn">О себе</button>
-      <div class="dropdown-content">
-        <a href="/about">О себе</a>
-        <a href="/merits">Мои заслуги</a>
-        <a href="/photoalbum">Фотоальбом</a>
-      </div>
-  </div>
-  <div class="dropdown">
-      <button class="dropbtn">Ученикам</button>
-      <div class="dropdown-content">
-        <a href="#">Тестирование учащихся</a>
-        <a href="#">Подготовка к олимпиаде по башкирскому языку</a>
-        <a href="#">Работа со слабоуспевающими</a>
-        <a href="/dictionary">Онлайн-словарь</a>
-      </div>
-  </div>
-  <div class="dropdown">
-      <button class="dropbtn">Учителям</button>
-      <div class="dropdown-content">
-        <a href="#">Рабочая программа</a>
-        <a href="#">Разработка уроков</a>
-        <a href="#">Учебно-методический комплкт</a>
-        <a href="#">Внеклассная работа</a>
-      </div>
-  </div>
-  <a href="#">Родителям</a>
-  <a href="#">Новости</a>
-  <a id="guest_kniga" href="#">Гостевая книга</a>
-  <button class="btn fourth">
-      <a href="/auth/login">Войти</a>
-  </button>
-  <!--<a href="/auth/login">Войти</a>-->
+    <a class="logo" href="/"></a>
+
+    <div class="dropdown">
+        <button class="dropbtn">О себе</button>
+        <div class="dropdown-content">
+            <a href="/about">О себе</a>
+            <a href="/merits">Мои заслуги</a>
+            <a href="/photoalbum">Фотоальбом</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Ученикам</button>
+        <div class="dropdown-content">
+            <a href="#">Тестирование учащихся</a>
+            <a href="#">Подготовка к олимпиаде по башкирскому языку</a>
+            <a href="#">Работа со слабоуспевающими</a>
+            <a href="/dictionary">Онлайн-словарь</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Учителям</button>
+        <div class="dropdown-content">
+            <a href="#">Рабочая программа</a>
+            <a href="#">Разработка уроков</a>
+            <a href="#">Учебно-методический комплкт</a>
+            <a href="#">Внеклассная работа</a>
+        </div>
+    </div>
+    <a href="#">Родителям</a>
+    <a href="#">Новости</a>
+    <a id="guest_kniga" href="#">Гостевая книга</a>
+    <% if(isAuth){ %>
+        <button class="btn fourth">
+            <a href="/auth/logout">Выйти</a>
+        </button>
+    <% }
+    else{ %>
+        <button class="btn fourth">
+            <a href="/auth/login">Войти</a>
+        </button>
+    <% } %>
 </div>
