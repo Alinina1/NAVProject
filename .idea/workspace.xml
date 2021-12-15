@@ -1,105 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6da19577-42ec-4381-b75d-0c781ab4e3a9" name="Changes" comment="#7. Вёрстка страницы входа">
-      <change afterPath="$PROJECT_DIR$/middleware/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware/variables.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
+    <list default="true" id="9fa20dac-f2ae-4029-b683-ecefe00a5f67" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/foto.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/photo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/foto_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/photo_2_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/about.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/about.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/auth/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/auth/login.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/blocks/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/blocks/header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/dictionary.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/dictionary.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/merits.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/merits.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/photoalbum.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/photoalbum.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="main" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="HARD" />
   </component>
-  <component name="ProjectId" id="21bHzO8AtzVLwOnme7gc44FRiC7" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectId" id="22KZxOWijPs3Uxmnmupfm5of1RP" />
   <component name="ProjectViewState">
-    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ChangesTree.GroupingKeys" value="" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\m8rin\Desktop\web\my mom\views" />
-    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6da19577-42ec-4381-b75d-0c781ab4e3a9" name="Changes" comment="" />
-      <created>1638203129225</created>
+      <changelist id="9fa20dac-f2ae-4029-b683-ecefe00a5f67" name="Changes" comment="" />
+      <created>1639588485788</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1638203129225</updated>
-      <workItem from="1638203130758" duration="1640000" />
-      <workItem from="1638205830458" duration="3312000" />
-      <workItem from="1638213869437" duration="1408000" />
-      <workItem from="1638215292599" duration="21288000" />
-      <workItem from="1638953355253" duration="8179000" />
+      <updated>1639588485788</updated>
+      <workItem from="1639588487517" duration="6157000" />
     </task>
-    <task id="LOCAL-00001" summary="feature: add merits styles">
-      <created>1638281322192</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1638281322192</updated>
-    </task>
-    <task id="LOCAL-00002" summary="feature: add merits styles">
-      <created>1638281696936</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1638281696936</updated>
-    </task>
-    <task id="LOCAL-00003" summary="feature: add photoalbum page">
-      <created>1638513777618</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1638513777618</updated>
-    </task>
-    <task id="LOCAL-00004" summary="feature: add bootstrap changes">
-      <created>1638515049790</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1638515049790</updated>
-    </task>
-    <task id="LOCAL-00005" summary="#7. Вёрстка страницы входа">
-      <created>1639315406891</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1639315406891</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,30 +63,10 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="dev" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="feature: add merits styles" />
-    <MESSAGE value="feature: add photoalbum page" />
-    <MESSAGE value="feature: add bootstrap changes" />
-    <MESSAGE value="#7. Вёрстка страницы входа" />
-    <option name="LAST_COMMIT_MESSAGE" value="#7. Вёрстка страницы входа" />
   </component>
 </project>

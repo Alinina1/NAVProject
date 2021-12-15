@@ -17,11 +17,10 @@ html{
 /* ШАПКА +++*/
 
 .panel{
-    position: absolute;
     width: 100%;
-    /*height: 20px;*/
-    left: 0px;
-    top: 0px;
+    height: 50px;
+    left: 0;
+    top: 0;
     background-color: #D6C7B2;
     border-bottom: 2px solid #494440;
 }
@@ -147,7 +146,7 @@ html{
     background-position: 0;
 }
 
-#guest_kniga{
+#guest_book{
     margin-right: 100px;
 }
 /*Кнопка для входа в аккаунт -*/
@@ -169,7 +168,7 @@ html{
     height: 300px;
     position: relative;
 }
-.fone1 {
+.phone1 {
     padding: 2em 1.5em;
     text-decoration: none;
     text-align: left;
@@ -184,17 +183,17 @@ html{
 }
 #info_about_me{
     width: 700px;
-    padding: 3em 0em;
+    padding: 3em 0;
     text-decoration: none;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: #413833;
 }
-.foto_main{
+.photo_main{
     display: block;
 }
-.foto_main img {
+.photo_main img {
     position: absolute;
     right: 100px;
     height: 200%;
@@ -245,33 +244,23 @@ html{
 .page3{
     background-color: #D6C7B2;
     background-size: auto;
-    height: 600px;
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 #info4{
-    display: inline-block;
-    float: left;
-    width: 620px;
-    height: 400px;
-    margin-top: 50px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 70px;
 
     background-color: #7c695b;
-    padding: 30px;
-    padding-top: 70px;
+    padding: 70px 30px 30px;
     text-align: center;
     font-family: 'Roboto',Arial,sans-serif;
     font-size: 20px;
     line-height: 1.55;
-    font-size: 20px;
     color: white;
-}
-
-.page3 img{
-    display: inline-block;
-    margin-top: 50px;
-    margin-left: 20px;
 }
 /* СТРАНИЦА О СЕБЕ --- */
 
@@ -340,8 +329,6 @@ html{
 
 /* СТРАНИЦА ФОТОАЛЬБОМ +++*/
 .card {
-    width: 1349px;
-    height:645px;
     overflow: hidden;
     overflow-x: scroll;
     background: white;
