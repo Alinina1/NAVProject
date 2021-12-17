@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
 body{
     /* background-color: #D6C7B2; */
     min-height: 100%;
@@ -404,3 +406,50 @@ html{
     width: 80%;
 }
 /* СТРАНИЦА ВХОДА --- */
+
+/* РОДИТЕЛЯМ +++ */
+.memo-label{
+    text-align: center;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    margin: 30px;
+    background-color: #75859e;
+}
+
+.to-parents-main-text{
+    margin-left: 300px;
+    margin-right: 300px;
+
+    text-align: justify;
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+}
+.custom-blockquote{
+    border-left: 4px solid #75859e; /* Линия слева от текста */
+}
+
+.expressions{
+    line-height: 1.9;
+}
+
+.expressions li{
+    list-style-type: none;
+}
+
+.expressions li::before {
+    color: #75859e; /* Цвет маркера */
+    content: "●"; /* Сам маркер */
+    padding-right: 10px; /* Расстояние от маркера до текста */
+}
+
+.poem{
+    text-align: center;
+    border-bottom: 4px solid #75859e;
+    border-top: 4px solid #75859e;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+/* РОДИТЕЛЯМ --- */

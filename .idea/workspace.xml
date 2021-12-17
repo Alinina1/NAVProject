@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9fa20dac-f2ae-4029-b683-ecefe00a5f67" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="9fa20dac-f2ae-4029-b683-ecefe00a5f67" name="Changes" comment="#4. Переименовать &quot;Мои заслуги&quot; в &quot;Мои достижения&quot;&#10;#5. В разделе &quot;О себе&quot; переименовать &quot;Фотоальбом&quot; на &quot;Портфолио&quot;&#10;#6. Убрать раздел &quot;Тестирование учащихся&quot; (закомментировать)">
+      <change afterPath="$PROJECT_DIR$/routes/toParents.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/toParents.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/foto.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/photo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/foto_2_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/photo_2_2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/about.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/about.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/auth/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/auth/login.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/blocks/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/blocks/header.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/dictionary.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/dictionary.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/merits.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/merits.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/photoalbum.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/photoalbum.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +22,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="22KZxOWijPs3Uxmnmupfm5of1RP" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -51,8 +46,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639588485788</updated>
-      <workItem from="1639588487517" duration="6157000" />
+      <workItem from="1639588487517" duration="11561000" />
+      <workItem from="1639634867363" duration="116000" />
+      <workItem from="1639638666584" duration="217000" />
+      <workItem from="1639645417491" duration="2734000" />
     </task>
+    <task id="LOCAL-00001" summary="#4. Переименовать &quot;Мои заслуги&quot; в &quot;Мои достижения&quot;&#10;#5. В разделе &quot;О себе&quot; переименовать &quot;Фотоальбом&quot; на &quot;Портфолио&quot;&#10;#6. Убрать раздел &quot;Тестирование учащихся&quot; (закомментировать)">
+      <created>1639595148044</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1639595148044</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -68,5 +74,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="#4. Переименовать &quot;Мои заслуги&quot; в &quot;Мои достижения&quot;&#10;#5. В разделе &quot;О себе&quot; переименовать &quot;Фотоальбом&quot; на &quot;Портфолио&quot;&#10;#6. Убрать раздел &quot;Тестирование учащихся&quot; (закомментировать)" />
+    <option name="LAST_COMMIT_MESSAGE" value="#4. Переименовать &quot;Мои заслуги&quot; в &quot;Мои достижения&quot;&#10;#5. В разделе &quot;О себе&quot; переименовать &quot;Фотоальбом&quot; на &quot;Портфолио&quot;&#10;#6. Убрать раздел &quot;Тестирование учащихся&quot; (закомментировать)" />
   </component>
 </project>

@@ -16,10 +16,11 @@ const meritsRoutes = require('./routes/merits');
 const aboutRoutes = require('./routes/about');
 const homeRoutes = require('./routes/home');
 const authRoutes = require('./routes/auth');
+const toParentsRoutes = require('./routes/toParents');
 
 const MONGODB_URI = "mongodb+srv://alinina:6wBTWeWDZTWbXE9@cluster0.qqzdi.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 const app = express();
-
+//6wBTWeWDZTWbXE9
 const store = MongoStore({
     collection: 'sessions',
     uri: MONGODB_URI,
@@ -49,6 +50,7 @@ app.use('/merits', meritsRoutes);
 app.use('/photoalbum', photoalbumRoutes);
 app.use('/dictionary', dictionaryRoutes);
 app.use('/auth', authRoutes);
+app.use('/toParents', toParentsRoutes);
 
 async function start(){
     try {
