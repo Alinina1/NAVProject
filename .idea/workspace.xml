@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6da19577-42ec-4381-b75d-0c781ab4e3a9" name="Changes" comment="#13. Починить онлайн словарь&#10;#14. Страница &quot;Подготовка к олимпиадам&quot;&#10;#16. Страница &quot;Физминутки...&quot;">
-      <change afterPath="$PROJECT_DIR$/routes/extracurricular.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/lessons.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/underperforming.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/workProgram.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/extracurricular.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/lessons.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/underperforming.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/workProgram.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/comments.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/documents/olimps/Вопросы олимпиады для русских школ.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/documents/olimps/Вопросы олимпиады.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/book.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/news.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/book.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/news.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/blocks/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/blocks/header.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +99,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

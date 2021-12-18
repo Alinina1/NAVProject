@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NAV</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+
+<body>
+<%- include ('blocks/header.ejs') %>
+<div class="comment-form">
+    <form class="comment-inputs" name="comment" method="POST" action="/book">
+        <div id="login_main_label" style="margin: 0">Добавьте комментарий</div>
+        <input id="guest_name" class="input_form" placeholder="Введите имя" style="margin: 0"
+               type="text" name="guest_name" required="required">
+        <p></p>
+        <input id="commentText" class="input_form" placeholder="Введите ваш комментарий" style="margin: 0"
+               type="text" name="commentText" required="required">
+        <br>
+        <input style="margin: 20px 0 10px 0" class="input_button" type="submit" name="submit_btn" value="Отправить">
+    </form>
+</div>
+<div class="comments-list">
+
+</div>
+
+</body>
+
+</html>

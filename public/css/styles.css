@@ -501,3 +501,21 @@ html{
     color: #7c695b;
 }
 /*ПОДГОТОВКА К ОЛИМПИАДАМ ---*/
+
+
+/*ГОСТЕВАЯ КНИГА +++*/
+.comment-form{
+    margin: 20px 30% 20px 30%;
+}
+
+.comment-inputs{
+    display: inline-block;
+    text-align: center;
+    font-family: 'Roboto',Arial,sans-serif;
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    box-shadow: 0 2px 40px 0 rgb(0 0 0 / 10%);
+    border-radius: 4px;
+}
+/*ГОСТЕВАЯ КНИГА ---*/

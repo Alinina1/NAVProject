@@ -25,6 +25,8 @@ const workProgramRoutes = require('./routes/workProgram');
 const underperformingRoutes = require('./routes/underperforming');
 const lessonsRoutes = require('./routes/lessons');
 const extracurricularRoutes = require('./routes/extracurricular');
+const newsRoutes = require('./routes/news');
+const bookRoutes = require('./routes/book');
 
 const app = express();
 //6wBTWeWDZTWbXE9
@@ -49,7 +51,6 @@ app.use(session({
 app.use(varMiddleware);
 app.use(userMiddleware);
 
-
 app.use('/', homeRoutes);
 app.use('/home', homeRoutes);
 app.use('/about', aboutRoutes);
@@ -65,6 +66,9 @@ app.use('/workProgram', workProgramRoutes);
 app.use('/underperforming', underperformingRoutes);
 app.use('/lessons', lessonsRoutes);
 app.use('/extracurricular', extracurricularRoutes);
+app.use('/news', newsRoutes);
+app.use('/book', bookRoutes);
+
 
 async function start(){
     try {
