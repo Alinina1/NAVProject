@@ -18,6 +18,7 @@ const aboutRoutes = require('./routes/about');
 const homeRoutes = require('./routes/home');
 const authRoutes = require('./routes/auth');
 const toParentsRoutes = require('./routes/toParents');
+const portfolioRoutes = require('./routes/portfolio');
 
 const app = express();
 //6wBTWeWDZTWbXE9
@@ -51,6 +52,7 @@ app.use('/photoalbum', photoalbumRoutes);
 app.use('/dictionary', dictionaryRoutes);
 app.use('/auth', authRoutes);
 app.use('/toParents', toParentsRoutes);
+app.use('/portfolio', portfolioRoutes);
 
 async function start(){
     try {
