@@ -28,7 +28,7 @@ const store = MongoStore({
 
 app.set('view engine', 'ejs');
 
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded());//исправление ошибки: req.body пустой
 app.use(express.json());
 app.use(helmet());
 app.use(compression());

@@ -16,6 +16,10 @@ html{
     padding:0;
 }
 
+.my-flex-box{
+    display: flex;
+    flex-direction: row;
+}
 /* ШАПКА +++*/
 
 .panel{
@@ -203,66 +207,73 @@ html{
 
 /*стрaница 2*/
 .page2{
+    display: flex;
+    flex-direction: row;
     margin-top: 200px;
+    padding-right: 150px;
     background-color: white;
     height: 450px;
-    text-align: left;
-    position: relative;
     z-index: -1;
+    align-items: center;
 }
-.page2 img {
-    left: 100px;
-    bottom: 10px;
-    padding-left: 100px;
-    float: left;
-    display: block;
+.img2 {
+    width: 30%;
+    padding-left: 80px;
 }
-#zapyataya{
-    position: absolute;
-    top: 190px;
-    left: 470px;
-    font-size: 90px;
-    transform: rotate(180deg);
+
+.img2 img{
+    width: 85%;
 }
-#info2 {
-    width: 700px;
-    display: inline-block;
-    padding-top: 200px;
-    padding-left: 150px;
+.poem1{
+    width: 70%;
 
     text-decoration: none;
-    text-align: left;
-    font-family: 'Bad Script', cursive;
-    font-size: 25px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    color: black;
 }
-#info2-1{
-    margin: 0;
-    padding-left: 1100px;
-    text-align: left;
+.info2 {
+    text-decoration: none;
+    font-family: 'Bad Script', cursive;
     font-size: 20px;
+}
+.info2-1{
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Bad Script', cursive;
 }
 
 /*стрaница 3*/
 .page3{
+    display: flex;
+    flex-direction: row;
+
     background-color: #D6C7B2;
     background-size: auto;
-    width: 100%;
-    table-layout: fixed;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 60px;
+    margin: 20px 30px 60px 30px;
 }
 
-#info4{
-    margin-left: 70px;
-
+.info3{
+    width: 60%;
     background-color: #7c695b;
     padding: 70px 30px 30px;
-    text-align: center;
+
+    text-align: justify;
     font-family: 'Roboto',Arial,sans-serif;
     font-size: 20px;
     line-height: 1.55;
     color: white;
+}
+
+.img3{
+ width: 40%;
+}
+
+.img3 img{
+    width: 70%;
 }
 /* СТРАНИЦА О СЕБЕ --- */
 
@@ -418,19 +429,23 @@ html{
 }
 
 .to-parents-main-text{
-    margin-left: 300px;
-    margin-right: 300px;
-
-    text-align: justify;
+    align-items: center;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 100px;
     font-family: "Manrope", sans-serif;
     font-size: 20px;
 }
 .custom-blockquote{
     border-left: 4px solid #75859e; /* Линия слева от текста */
+    text-align: justify;
+    padding-left: 20px;
 }
 
 .expressions{
     line-height: 1.9;
+    text-align: justify;
 }
 
 .expressions li{
@@ -451,5 +466,25 @@ html{
     padding-bottom: 20px;
     margin-top: 20px;
     margin-bottom: 50px;
+}
+
+.documents{
+    margin-top: 40px;
+    text-decoration: none;
+}
+
+.documents a{
+    text-decoration: none;
+    color: #2a559a;
+}
+
+.document-icon-label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.document-icon-label img{
+    width: 30%;
 }
 /* РОДИТЕЛЯМ --- */
