@@ -21,6 +21,10 @@ const toParentsRoutes = require('./routes/toParents');
 const portfolioRoutes = require('./routes/portfolio');
 const olimpsRoutes = require('./routes/olimps');
 const fizminRoutes = require('./routes/fizmin');
+const workProgramRoutes = require('./routes/workProgram');
+const underperformingRoutes = require('./routes/underperforming');
+const lessonsRoutes = require('./routes/lessons');
+const extracurricularRoutes = require('./routes/extracurricular');
 
 const app = express();
 //6wBTWeWDZTWbXE9
@@ -57,6 +61,10 @@ app.use('/toParents', toParentsRoutes);
 app.use('/portfolio', portfolioRoutes);
 app.use('/olimps', olimpsRoutes);
 app.use('/fizmin', fizminRoutes);
+app.use('/workProgram', workProgramRoutes);
+app.use('/underperforming', underperformingRoutes);
+app.use('/lessons', lessonsRoutes);
+app.use('/extracurricular', extracurricularRoutes);
 
 async function start(){
     try {
