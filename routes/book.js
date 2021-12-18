@@ -2,10 +2,11 @@ const {Router} = require('express');
 const Comment  = require('../models/comments');
 const router = Router();
 
-router.get('/', (req, res) => {
+router.get('/', async (req, res) => {
+    res.set("Content-Security-Policy", "frame-src https://lidrekon.ru;");
     const comments = await Comment.find();
     res.render('book', {
-
+        comments
     });
 })
 

@@ -3,7 +3,7 @@ const router = Router();
 
 router.get('/', (req, res) => {
     res.set("Content-Security-Policy", "frame-src https://lidrekon.ru;");
-    res.render('extracurricular');
+    res.render('proverbs');
 })
 
 module.exports = router;

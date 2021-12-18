@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/styles.css"/>
+    <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+    <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
 </head>
 
 <body>
@@ -15,14 +17,30 @@
         <input id="guest_name" class="input_form" placeholder="Введите имя" style="margin: 0"
                type="text" name="guest_name" required="required">
         <p></p>
-        <input id="commentText" class="input_form" placeholder="Введите ваш комментарий" style="margin: 0"
+        <input id="commentText" class="input_form" placeholder="Введите ваш комментарий" style="margin: 0; height: 70px"
                type="text" name="commentText" required="required">
         <br>
         <input style="margin: 20px 0 10px 0" class="input_button" type="submit" name="submit_btn" value="Отправить">
     </form>
 </div>
 <div class="comments-list">
+    <% for (const i in comments.reverse()) { %>
+        <div class="comment-box">
+            <div class="my-flex-box" style="justify-content: space-between">
+                <div style="font-weight: bold"><%= comments[i].name %></div>
+                <div style="font-size: 14px; color: darkgray">
+                    <%= comments[i].commentDate.getDate() %>.
+                    <%=comments[i].commentDate.getMonth()+1%>.
+                    <%= comments[i].commentDate.getFullYear() %>
+                </div>
+            </div>
+            <div style="padding: 10px 0 0 0">
+                <%= comments[i].commentText %>
+            </div>
 
+        </div>
+
+    <% } %>
 </div>
 
 </body>

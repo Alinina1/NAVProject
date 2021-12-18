@@ -164,7 +164,7 @@ html {
 }
 
 #guest_book {
-    margin-right: 100px;
+
 }
 
 /*Кнопка для входа в аккаунт -*/
@@ -610,4 +610,29 @@ html {
     box-shadow: 0 2px 40px 0 rgb(0 0 0 / 10%);
     border-radius: 4px;
 }
+.comments-list{
+    text-align: center;
+    margin: 20px 10% 20px 10%;
+    padding-top: 20px;
+}
+
+.comment-box{
+    text-align: justify;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    background-color: white;
+    box-shadow: 0 2px 40px 0 rgb(0 0 0 / 10%);
+    border-radius: 2px;
+    padding: 10px 20px 10px 20px;
+    margin: 10px 10% 15px 10%;
+}
 /*ГОСТЕВАЯ КНИГА ---*/
+
+.proverbs-main{
+    text-align: center;
+    margin: 0 30% 0 30%
+}
+
+.proverbs-main ul{
+    text-align: left;
+}
