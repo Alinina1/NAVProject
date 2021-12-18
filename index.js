@@ -19,6 +19,8 @@ const homeRoutes = require('./routes/home');
 const authRoutes = require('./routes/auth');
 const toParentsRoutes = require('./routes/toParents');
 const portfolioRoutes = require('./routes/portfolio');
+const olimpsRoutes = require('./routes/olimps');
+const fizminRoutes = require('./routes/fizmin');
 
 const app = express();
 //6wBTWeWDZTWbXE9
@@ -53,6 +55,8 @@ app.use('/dictionary', dictionaryRoutes);
 app.use('/auth', authRoutes);
 app.use('/toParents', toParentsRoutes);
 app.use('/portfolio', portfolioRoutes);
+app.use('/olimps', olimpsRoutes);
+app.use('/fizmin', fizminRoutes);
 
 async function start(){
     try {
