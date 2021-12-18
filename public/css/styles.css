@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
 body{
     /* background-color: #D6C7B2; */
     min-height: 100%;
     margin:0;
     padding:0;
+    background-color: #D6C7B2;
+    background-size: 100%;
 }
 
 html{
@@ -12,14 +16,17 @@ html{
     padding:0;
 }
 
+.my-flex-box{
+    display: flex;
+    flex-direction: row;
+}
 /* ШАПКА +++*/
 
 .panel{
-    position: absolute;
     width: 100%;
-    /*height: 20px;*/
-    left: 0px;
-    top: 0px;
+    height: 50px;
+    left: 0;
+    top: 0;
     background-color: #D6C7B2;
     border-bottom: 2px solid #494440;
 }
@@ -122,6 +129,16 @@ html{
     outline: 0;
 }
 
+.btn a{
+    margin: 0;
+    padding: 0;
+}
+.btn a:hover{
+    margin: 0;
+    padding: 0;
+    background-color: #75859e;
+}
+
 .fourth {
     margin-top: 6px;
     border-color: #75859e;
@@ -135,7 +152,7 @@ html{
     background-position: 0;
 }
 
-#guest_kniga{
+#guest_book{
     margin-right: 100px;
 }
 /*Кнопка для входа в аккаунт -*/
@@ -157,7 +174,7 @@ html{
     height: 300px;
     position: relative;
 }
-.fone1 {
+.phone1 {
     padding: 2em 1.5em;
     text-decoration: none;
     text-align: left;
@@ -172,17 +189,17 @@ html{
 }
 #info_about_me{
     width: 700px;
-    padding: 3em 0em;
+    padding: 3em 0;
     text-decoration: none;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: #413833;
 }
-.foto_main{
+.photo_main{
     display: block;
 }
-.foto_main img {
+.photo_main img {
     position: absolute;
     right: 100px;
     height: 200%;
@@ -190,82 +207,73 @@ html{
 
 /*стрaница 2*/
 .page2{
+    display: flex;
+    flex-direction: row;
     margin-top: 200px;
+    padding-right: 150px;
     background-color: white;
     height: 450px;
-    text-align: left;
-    position: relative;
     z-index: -1;
+    align-items: center;
 }
-.page2 img {
-    left: 100px;
-    bottom: 10px;
-    padding-left: 100px;
-    float: left;
-    display: block;
+.img2 {
+    width: 30%;
+    padding-left: 80px;
 }
-#zapyataya{
-    position: absolute;
-    top: 190px;
-    left: 470px;
-    font-size: 90px;
-    transform: rotate(180deg);
+
+.img2 img{
+    width: 85%;
 }
-#info2 {
-    width: 700px;
-    display: inline-block;
-    padding-top: 200px;
-    padding-left: 150px;
+.poem1{
+    width: 70%;
 
     text-decoration: none;
-    text-align: left;
-    font-family: 'Bad Script', cursive;
-    font-size: 25px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    color: black;
 }
-#info2-1{
-    margin: 0;
-    padding-left: 1100px;
-    text-align: left;
+.info2 {
+    text-decoration: none;
+    font-family: 'Bad Script', cursive;
     font-size: 20px;
+}
+.info2-1{
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Bad Script', cursive;
 }
 
 /*стрaница 3*/
 .page3{
+    display: flex;
+    flex-direction: row;
+
     background-color: #D6C7B2;
     background-size: auto;
-    height: 600px;
+    text-align: center;
+    margin: 20px 30px 60px 30px;
 }
 
-#info4{
-    display: inline-block;
-    float: left;
-    width: 620px;
-    height: 400px;
-    margin-top: 50px;
-    margin-left: 60px;
-    margin-right: 60px;
-
+.info3{
+    width: 60%;
     background-color: #7c695b;
-    padding: 30px;
-    padding-top: 70px;
-    text-align: center;
+    padding: 70px 30px 30px;
+
+    text-align: justify;
     font-family: 'Roboto',Arial,sans-serif;
     font-size: 20px;
     line-height: 1.55;
-    font-size: 20px;
     color: white;
 }
 
-.page3 img{
-    display: inline-block;
-    margin-top: 50px;
-    margin-left: 20px;
+.img3{
+ width: 40%;
 }
 
-.page4{
-    background-color: white;
-    height: 450px;
-    text-align: left;
+.img3 img{
+    width: 70%;
 }
 /* СТРАНИЦА О СЕБЕ --- */
 
@@ -332,35 +340,15 @@ html{
 }
 /* СТРАНИЦА ЗАСЛУГИ --- */
 
-
+/* СТРАНИЦА ФОТОАЛЬБОМ +++*/
 .card {
-    /*background-color: #fff;
-    min-width: 100%;
-    min-height: 200px;
-    display: flex;
-    overflow-x: auto;
-     */
-    width: 1349px;
-    height:645px;
     overflow: hidden;
     overflow-x: scroll;
     background: white;
     white-space:nowrap;
 }
 
-/*
-.card::-webkit-scrollbar {
-    display: none;
-}
- */
-
 .card--content {
-    /*
-    background-color: #D6C7B2;
-    min-width: 1200px;
-    height: 630px;
-    overflow: hidden;
-     */
     display: inline-block;
     vertical-align: top;
     width: 650px;
@@ -374,3 +362,129 @@ html{
     display: block;
     margin: 0 auto;
 }
+/* СТРАНИЦА ФОТОАЛЬБОМ --- */
+
+/* СТРАНИЦА ВХОДА +++ */
+.auth{
+    margin: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.inputs {
+    display: inline-block;
+    text-align: left;
+    font-family: 'Roboto',Arial,sans-serif;
+    width: 400px;
+    height: 420px;
+    background-color: white;
+    box-shadow: 0 2px 40px 0 rgb(0 0 0 / 10%);
+    border-radius: 4px;
+}
+#login_main_label{
+    font-size: 27px;
+    text-align: center;
+    margin-top: 15px;
+    padding: 25px;
+}
+
+.login_label{
+    font-size: 20px;
+    text-align: left;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.input_form{
+    margin-left: 40px;
+    width: 80%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+.input_button{
+    margin: 40px;
+    background-color: #75859e; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 80%;
+}
+/* СТРАНИЦА ВХОДА --- */
+
+/* РОДИТЕЛЯМ +++ */
+.memo-label{
+    text-align: center;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    margin: 30px;
+    background-color: #75859e;
+}
+
+.to-parents-main-text{
+    align-items: center;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 100px;
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+}
+.custom-blockquote{
+    border-left: 4px solid #75859e; /* Линия слева от текста */
+    text-align: justify;
+    padding-left: 20px;
+}
+
+.expressions{
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.expressions li{
+    list-style-type: none;
+}
+
+.expressions li::before {
+    color: #75859e; /* Цвет маркера */
+    content: "●"; /* Сам маркер */
+    padding-right: 10px; /* Расстояние от маркера до текста */
+}
+
+.poem{
+    text-align: center;
+    border-bottom: 4px solid #75859e;
+    border-top: 4px solid #75859e;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.documents{
+    margin-top: 40px;
+    text-decoration: none;
+}
+
+.documents a{
+    text-decoration: none;
+    color: #2a559a;
+}
+
+.document-icon-label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.document-icon-label img{
+    width: 30%;
+}
+/* РОДИТЕЛЯМ --- */
