@@ -41,7 +41,7 @@ app.use(bodyParser.urlencoded());//исправление ошибки: req.body
 app.use(express.json());
 app.use(helmet());
 app.use(compression());
-app.use(express.static(__dirname +'/public/'));
+app.use(express.static(__dirname + '/public/'));
 app.use(session({
     secret: keys.SESSION_SECRET,
     resave: false,
@@ -70,7 +70,7 @@ app.use('/news', newsRoutes);
 app.use('/book', bookRoutes);
 
 
-async function start(){
+async function start() {
     try {
         //const password = "6wBTWeWDZTWbXE9";
 
@@ -80,7 +80,7 @@ async function start(){
 
         app.set('port', (process.env.PORT || 3000));
         app.listen(app.get('port'), () => console.log('Server is running'));
-    } catch (e){
+    } catch (e) {
         console.log(e);
     }
 }
