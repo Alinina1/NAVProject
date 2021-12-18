@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6da19577-42ec-4381-b75d-0c781ab4e3a9" name="Changes" comment="#1. Подключиться к БД&#10;#2. Реализовать авторизацию, используя БД mongodb">
+    <list default="true" id="6da19577-42ec-4381-b75d-0c781ab4e3a9" name="Changes" comment="#9. убери уч-метод комплект. вместо этого физминутки на башкирском языке.&#10;#10. Страница &quot;Родителям&quot;">
+      <change afterPath="$PROJECT_DIR$/keys/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keys/keys.dev.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keys/keys.prod.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/about.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/about.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/blocks/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/blocks/header.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/toParents.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/toParents.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +16,11 @@
   </component>
   <component name="ChangesViewManager" show_ignored="true" />
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
