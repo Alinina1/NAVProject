@@ -1,0 +1,75 @@
+Index: index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>const express = require('express');\r\nconst mongoose = require('mongoose');//база данных mongo db\r\nconst helmet = require('helmet');\r\nconst compression = require('compression');\r\nconst session = require('express-session');\r\nconst MongoStore = require('connect-mongodb-session')(session);\r\nconst User = require('./models/user')\r\nconst userMiddleware = require('./middleware/user')\r\nconst varMiddleware = require('./middleware/variables');\r\nconst bodyParser = require('body-parser');\r\n\r\n//routes\r\nconst dictionaryRoutes = require('./routes/dictionary');\r\nconst photoalbumRoutes = require('./routes/photoalbum');\r\nconst meritsRoutes = require('./routes/merits');\r\nconst aboutRoutes = require('./routes/about');\r\nconst homeRoutes = require('./routes/home');\r\nconst authRoutes = require('./routes/auth');\r\n\r\nconst MONGODB_URI = \"mongodb+srv://alinina:6wBTWeWDZTWbXE9@cluster0.qqzdi.mongodb.net/myFirstDatabase?retryWrites=true&w=majority\"\r\nconst app = express();\r\n\r\nconst store = MongoStore({\r\n    collection: 'sessions',\r\n    uri: MONGODB_URI,\r\n});\r\n\r\napp.set('view engine', 'ejs');\r\n\r\napp.use(bodyParser.urlencoded());\r\napp.use(express.json());\r\napp.use(helmet());\r\napp.use(compression());\r\napp.use(express.static(__dirname +'/public/'));\r\napp.use(session({\r\n    secret: 'some secret value',\r\n    resave: false,\r\n    saveUninitialized: false,\r\n    store\r\n}));\r\napp.use(varMiddleware);\r\napp.use(userMiddleware);\r\n\r\n\r\napp.use('/', homeRoutes);\r\napp.use('/home', homeRoutes);\r\napp.use('/about', aboutRoutes);\r\napp.use('/merits', meritsRoutes);\r\napp.use('/photoalbum', photoalbumRoutes);\r\napp.use('/dictionary', dictionaryRoutes);\r\napp.use('/auth', authRoutes);\r\n\r\nasync function start(){\r\n    try {\r\n        //const password = \"6wBTWeWDZTWbXE9\";\r\n\r\n        await mongoose.connect(MONGODB_URI, {\r\n            useNewUrlParser: true\r\n        });\r\n\r\n        app.set('port', (process.env.PORT || 3000));\r\n        app.listen(app.get('port'), () => console.log('Server is running'));\r\n    } catch (e){\r\n        console.log(e);\r\n    }\r\n}\r\n\r\nstart();\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.js b/index.js
+--- a/index.js	(revision 208146cdb782bde7130bffdd42c0831e1ae7718f)
++++ b/index.js	(date 1639392004132)
+@@ -27,7 +27,7 @@
+ 
+ app.set('view engine', 'ejs');
+ 
+-app.use(bodyParser.urlencoded());
++app.use(bodyParser.urlencoded());//исправление ошибки: req.body пустой
+ app.use(express.json());
+ app.use(helmet());
+ app.use(compression());
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"6da19577-42ec-4381-b75d-0c781ab4e3a9\" name=\"Changes\" comment=\"#7. Вёрстка страницы входа\">\r\n      <change afterPath=\"$PROJECT_DIR$/middleware/user.js\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/middleware/variables.js\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/models/user.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/index.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/index.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/package-lock.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/package-lock.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/package.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/package.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/routes/auth.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/routes/auth.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/views/auth/login.ejs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/views/auth/login.ejs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/views/blocks/header.ejs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/views/blocks/header.ejs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/views/home.ejs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/views/home.ejs\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n    <option name=\"RESET_MODE\" value=\"HARD\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"21bHzO8AtzVLwOnme7gc44FRiC7\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"autoscrollToSource\" value=\"true\" />\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/views\" />\r\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\m8rin\\Desktop\\web\\my mom\\views\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"6da19577-42ec-4381-b75d-0c781ab4e3a9\" name=\"Changes\" comment=\"\" />\r\n      <created>1638203129225</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1638203129225</updated>\r\n      <workItem from=\"1638203130758\" duration=\"1640000\" />\r\n      <workItem from=\"1638205830458\" duration=\"3312000\" />\r\n      <workItem from=\"1638213869437\" duration=\"1408000\" />\r\n      <workItem from=\"1638215292599\" duration=\"21288000\" />\r\n      <workItem from=\"1638953355253\" duration=\"8179000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"feature: add merits styles\">\r\n      <created>1638281322192</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1638281322192</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"feature: add merits styles\">\r\n      <created>1638281696936</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1638281696936</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"feature: add photoalbum page\">\r\n      <created>1638513777618</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1638513777618</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"feature: add bootstrap changes\">\r\n      <created>1638515049790</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1638515049790</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"#7. Вёрстка страницы входа\">\r\n      <created>1639315406891</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1639315406891</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"6\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"dev\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"feature: add merits styles\" />\r\n    <MESSAGE value=\"feature: add photoalbum page\" />\r\n    <MESSAGE value=\"feature: add bootstrap changes\" />\r\n    <MESSAGE value=\"#7. Вёрстка страницы входа\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"#7. Вёрстка страницы входа\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 208146cdb782bde7130bffdd42c0831e1ae7718f)
++++ b/.idea/workspace.xml	(date 1639407171039)
+@@ -1,18 +1,9 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="6da19577-42ec-4381-b75d-0c781ab4e3a9" name="Changes" comment="#7. Вёрстка страницы входа">
+-      <change afterPath="$PROJECT_DIR$/middleware/user.js" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/middleware/variables.js" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
++    <list default="true" id="6da19577-42ec-4381-b75d-0c781ab4e3a9" name="Changes" comment="#1. Подключиться к БД&#10;#2. Реализовать авторизацию, используя БД mongodb">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/views/auth/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/auth/login.ejs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/views/blocks/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/blocks/header.ejs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/views/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.ejs" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -99,7 +90,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1639315406891</updated>
+     </task>
+-    <option name="localTasksCounter" value="6" />
++    <task id="LOCAL-00006" summary="#1. Подключиться к БД&#10;#2. Реализовать авторизацию, используя БД mongodb">
++      <created>1639391955610</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1639391955610</updated>
++    </task>
++    <option name="localTasksCounter" value="7" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -134,6 +132,7 @@
+     <MESSAGE value="feature: add photoalbum page" />
+     <MESSAGE value="feature: add bootstrap changes" />
+     <MESSAGE value="#7. Вёрстка страницы входа" />
+-    <option name="LAST_COMMIT_MESSAGE" value="#7. Вёрстка страницы входа" />
++    <MESSAGE value="#1. Подключиться к БД&#10;#2. Реализовать авторизацию, используя БД mongodb" />
++    <option name="LAST_COMMIT_MESSAGE" value="#1. Подключиться к БД&#10;#2. Реализовать авторизацию, используя БД mongodb" />
+   </component>
+ </project>
+\ No newline at end of file

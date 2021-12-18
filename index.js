@@ -8,6 +8,7 @@ const User = require('./models/user')
 const userMiddleware = require('./middleware/user')
 const varMiddleware = require('./middleware/variables');
 const bodyParser = require('body-parser');
+const keys = require('./keys')
 
 //routes
 const dictionaryRoutes = require('./routes/dictionary');
@@ -18,12 +19,11 @@ const homeRoutes = require('./routes/home');
 const authRoutes = require('./routes/auth');
 const toParentsRoutes = require('./routes/toParents');
 
-const MONGODB_URI = "mongodb+srv://alinina:6wBTWeWDZTWbXE9@cluster0.qqzdi.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 const app = express();
 //6wBTWeWDZTWbXE9
 const store = MongoStore({
     collection: 'sessions',
-    uri: MONGODB_URI,
+    uri: keys.MONGODB_URI,
 });
 
 app.set('view engine', 'ejs');
@@ -34,7 +34,7 @@ app.use(helmet());
 app.use(compression());
 app.use(express.static(__dirname +'/public/'));
 app.use(session({
-    secret: 'some secret value',
+    secret: keys.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
     store
@@ -56,7 +56,7 @@ async function start(){
     try {
         //const password = "6wBTWeWDZTWbXE9";
 
-        await mongoose.connect(MONGODB_URI, {
+        await mongoose.connect(keys.MONGODB_URI, {
             useNewUrlParser: true
         });
 
