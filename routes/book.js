@@ -1,12 +1,16 @@
 const {Router} = require('express');
 const Comment  = require('../models/comments');
+const Numb  = require('../models/numb');
 const router = Router();
 
 router.get('/', async (req, res) => {
     res.set("Content-Security-Policy", "frame-src https://lidrekon.ru;");
+    const numb = await Numb.find().limit(1).sort({$natural:-1});
+    console.log(numb);
     const comments = await Comment.find();
     res.render('book', {
-        comments
+        comments,
+        numb
     });
 })
 

@@ -28,7 +28,7 @@ router.post('/login', async (req, res) => {
                     if (err) {
                         throw err;
                     }
-                    res.redirect('/')
+                    res.redirect('/home')
                 });
             } else {
                 res.redirect('/auth/login')
