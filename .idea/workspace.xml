@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6da19577-42ec-4381-b75d-0c781ab4e3a9" name="Changes" comment="#3. Вёрстка оставшихся страниц, данные из облака яндекс диск">
-      <changelist_data name="Nutfullina Alina" email="xxxnut@yandex.ru" date="1639867501000" />
-      <change afterPath="$PROJECT_DIR$/public/img/bgpi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/news.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/z2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/z3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/z4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/z5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/z6.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/z7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/script/jquery-1.12.3.min.js" afterDir="false" />
+    <list default="true" id="6da19577-42ec-4381-b75d-0c781ab4e3a9" name="Changes" comment="add difference from master">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_30_11_2021_0_49__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_30_11_2021_0_49__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/blocks/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/blocks/header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/about.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/about.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/auth/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/auth/login.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/book.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/book.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/dictionary.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/dictionary.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/extracurricular.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/extracurricular.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/fizmin.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/fizmin.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/lessons.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/lessons.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/merits.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/merits.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/news.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/news.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/olimps.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/olimps.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/photoalbum.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/photoalbum.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/portfolio.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/portfolio.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/proverbs.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/proverbs.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/toParents.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/toParents.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/underperforming.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/underperforming.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/workProgram.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/workProgram.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639868194638</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add difference from master">
+      <created>1639925463569</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1639925463569</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +153,7 @@
     <MESSAGE value="#13. Починить онлайн словарь&#10;#14. Страница &quot;Подготовка к олимпиадам&quot;&#10;#16. Страница &quot;Физминутки...&quot;" />
     <MESSAGE value="Подготовка всех страниц 1" />
     <MESSAGE value="#3. Вёрстка оставшихся страниц, данные из облака яндекс диск" />
-    <option name="LAST_COMMIT_MESSAGE" value="#3. Вёрстка оставшихся страниц, данные из облака яндекс диск" />
+    <MESSAGE value="add difference from master" />
+    <option name="LAST_COMMIT_MESSAGE" value="add difference from master" />
   </component>
 </project>
