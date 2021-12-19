@@ -18,6 +18,16 @@ const aboutRoutes = require('./routes/about');
 const homeRoutes = require('./routes/home');
 const authRoutes = require('./routes/auth');
 const toParentsRoutes = require('./routes/toParents');
+const portfolioRoutes = require('./routes/portfolio');
+const olimpsRoutes = require('./routes/olimps');
+const fizminRoutes = require('./routes/fizmin');
+const workProgramRoutes = require('./routes/workProgram');
+const underperformingRoutes = require('./routes/underperforming');
+const lessonsRoutes = require('./routes/lessons');
+const extracurricularRoutes = require('./routes/extracurricular');
+const newsRoutes = require('./routes/news');
+const bookRoutes = require('./routes/book');
+const proverbsRoutes = require('./routes/proverbs');
 
 const app = express();
 //6wBTWeWDZTWbXE9
@@ -32,7 +42,7 @@ app.use(bodyParser.urlencoded());//исправление ошибки: req.body
 app.use(express.json());
 app.use(helmet());
 app.use(compression());
-app.use(express.static(__dirname +'/public/'));
+app.use(express.static(__dirname + '/public/'));
 app.use(session({
     secret: keys.SESSION_SECRET,
     resave: false,
@@ -42,27 +52,35 @@ app.use(session({
 app.use(varMiddleware);
 app.use(userMiddleware);
 
-
-app.use('/', homeRoutes);
-app.use('/home', homeRoutes);
+app.use('/', aboutRoutes);
+app.use('/home', aboutRoutes);
 app.use('/about', aboutRoutes);
 app.use('/merits', meritsRoutes);
 app.use('/photoalbum', photoalbumRoutes);
 app.use('/dictionary', dictionaryRoutes);
 app.use('/auth', authRoutes);
 app.use('/toParents', toParentsRoutes);
+app.use('/portfolio', portfolioRoutes);
+app.use('/olimps', olimpsRoutes);
+app.use('/fizmin', fizminRoutes);
+app.use('/workProgram', workProgramRoutes);
+app.use('/underperforming', underperformingRoutes);
+app.use('/lessons', lessonsRoutes);
+app.use('/extracurricular', extracurricularRoutes);
+app.use('/news', newsRoutes);
+app.use('/book', bookRoutes);
 
-async function start(){
+
+async function start() {
     try {
         //const password = "6wBTWeWDZTWbXE9";
 
         await mongoose.connect(keys.MONGODB_URI, {
             useNewUrlParser: true
         });
-
         app.set('port', (process.env.PORT || 3000));
         app.listen(app.get('port'), () => console.log('Server is running'));
-    } catch (e){
+    } catch (e) {
         console.log(e);
     }
 }

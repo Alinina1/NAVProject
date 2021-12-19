@@ -3,6 +3,7 @@ const User = require('../models/user')
 const router = Router();
 
 router.get('/login', async (req, res) => {
+    res.set("Content-Security-Policy", "frame-src https://lidrekon.ru;");
     res.render('auth/login');
 })
 

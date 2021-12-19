@@ -2,27 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 
-body{
+body {
     /* background-color: #D6C7B2; */
     min-height: 100%;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     background-color: #D6C7B2;
     background-size: 100%;
 }
 
-html{
-    margin:0;
-    padding:0;
+html {
+    margin: 0;
+    padding: 0;
 }
 
-.my-flex-box{
+.my-flex-box {
     display: flex;
     flex-direction: row;
 }
+
 /* ШАПКА +++*/
 
-.panel{
+.panel {
     width: 100%;
     height: 50px;
     left: 0;
@@ -45,6 +46,7 @@ html{
     background-color: #9e8976;
     color: black;
 }
+
 .panel .logo:hover {
     background-color: #D6C7B2;
     color: black;
@@ -66,6 +68,7 @@ html{
     float: left;
     overflow: hidden;
 }
+
 .dropdown .dropbtn {
     font-size: 17px;
     border: none;
@@ -76,9 +79,11 @@ html{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
+
 .panel a:hover, .dropdown:hover .dropbtn {
     background-color: #9e8976;
 }
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -86,6 +91,7 @@ html{
     min-width: 160px;
     z-index: 1;
 }
+
 .dropdown-content a {
     float: none;
     color: white;
@@ -95,12 +101,15 @@ html{
     text-align: left;
     font-size: 13px;
 }
+
 .dropdown-content a:hover {
     background-color: #9e8976;
 }
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 /*Всплывающие окошки - */
 
 /*Кнопка для входа в аккаунт +*/
@@ -129,11 +138,12 @@ html{
     outline: 0;
 }
 
-.btn a{
+.btn a {
     margin: 0;
     padding: 0;
 }
-.btn a:hover{
+
+.btn a:hover {
     margin: 0;
     padding: 0;
     background-color: #75859e;
@@ -148,13 +158,15 @@ html{
     background-position: 100%;
     background-size: 400%;
 }
+
 .fourth:hover {
     background-position: 0;
 }
 
-#guest_book{
-    margin-right: 100px;
+#guest_book {
+
 }
+
 /*Кнопка для входа в аккаунт -*/
 
 /* ШАПКА ---*/
@@ -163,7 +175,7 @@ html{
 /* СТРАНИЦА О СЕБЕ +++ */
 
 /*страница 1*/
-.page1{
+.page1 {
     /*background-image: url("../img/school-fon1.jpg");
     background-size: 100%;
     height: 709px;
@@ -174,6 +186,7 @@ html{
     height: 300px;
     position: relative;
 }
+
 .phone1 {
     padding: 2em 1.5em;
     text-decoration: none;
@@ -184,10 +197,12 @@ html{
     color: #7c695b;
     position: absolute;
 }
-#fio-anim:hover{
+
+#fio-anim:hover {
     font-size: 70px;
 }
-#info_about_me{
+
+#info_about_me {
     width: 700px;
     padding: 3em 0;
     text-decoration: none;
@@ -196,9 +211,11 @@ html{
     font-size: 14px;
     color: #413833;
 }
-.photo_main{
+
+.photo_main {
     display: block;
 }
+
 .photo_main img {
     position: absolute;
     right: 100px;
@@ -206,7 +223,7 @@ html{
 }
 
 /*стрaница 2*/
-.page2{
+.page2 {
     display: flex;
     flex-direction: row;
     margin-top: 200px;
@@ -216,15 +233,17 @@ html{
     z-index: -1;
     align-items: center;
 }
+
 .img2 {
     width: 30%;
     padding-left: 80px;
 }
 
-.img2 img{
+.img2 img {
     width: 85%;
 }
-.poem1{
+
+.poem1 {
     width: 70%;
 
     text-decoration: none;
@@ -234,19 +253,21 @@ html{
     font-weight: normal;
     color: black;
 }
+
 .info2 {
     text-decoration: none;
     font-family: 'Bad Script', cursive;
     font-size: 20px;
 }
-.info2-1{
+
+.info2-1 {
     font-size: 18px;
     text-decoration: none;
     font-family: 'Bad Script', cursive;
 }
 
 /*стрaница 3*/
-.page3{
+.page3 {
     display: flex;
     flex-direction: row;
 
@@ -256,29 +277,30 @@ html{
     margin: 20px 30px 60px 30px;
 }
 
-.info3{
+.info3 {
     width: 60%;
     background-color: #7c695b;
     padding: 70px 30px 30px;
 
     text-align: justify;
-    font-family: 'Roboto',Arial,sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 20px;
     line-height: 1.55;
     color: white;
 }
 
-.img3{
- width: 40%;
+.img3 {
+    width: 40%;
 }
 
-.img3 img{
+.img3 img {
     width: 70%;
 }
+
 /* СТРАНИЦА О СЕБЕ --- */
 
 /* СТРАНИЦА ЗАСЛУГИ +++ */
-.merits_main{
+.merits_main {
     background-color: #D6C7B2;
     background-size: auto;
     height: 500px;
@@ -286,9 +308,9 @@ html{
     padding: 50px;
 }
 
-#merit_box{
-    display:inline;
-    float:left;
+#merit_box {
+    display: inline;
+    float: left;
     child-align: middle;
     margin: 50px;
     width: 200px;
@@ -296,39 +318,40 @@ html{
     color: black;
     text-decoration: none;
     font-size: 30px;
-    font-family: 'Roboto',Arial,sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
-#merit_box img:hover{
+#merit_box img:hover {
     height: 70%;
 }
-#merit_box:hover{
+
+#merit_box:hover {
     text-shadow: black 1px 0 10px;
     font-size: 35px;
 }
 
-.merit{
+.merit {
     background-color: white;
     background-size: auto;
     height: 600px;
     margin: 40px;
 }
 
-#merit_name{
+#merit_name {
     padding: 25px;
     font-size: 35px;
-    font-family: 'Roboto',Arial,sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
-#merit_photo{
-    display:inline;
-    float:left;
+#merit_photo {
+    display: inline;
+    float: left;
     margin: 50px;
 }
 
-#merit_desk{
-    display:inline;
-    float:right;
+#merit_desk {
+    display: inline;
+    float: right;
     margin: 20px;
     background-color: #7c695b;
     height: 400px;
@@ -338,6 +361,7 @@ html{
     color: white;
     font-size: 20px;
 }
+
 /* СТРАНИЦА ЗАСЛУГИ --- */
 
 /* СТРАНИЦА ФОТОАЛЬБОМ +++*/
@@ -345,27 +369,28 @@ html{
     overflow: hidden;
     overflow-x: scroll;
     background: white;
-    white-space:nowrap;
+    white-space: nowrap;
 }
 
 .card--content {
     display: inline-block;
     vertical-align: top;
     width: 650px;
-    height:645px;
+    height: 645px;
     background: #D6C7B2;
 }
 
-.card--content img{
-    width:auto;
-    height:100%;
+.card--content img {
+    width: auto;
+    height: 100%;
     display: block;
     margin: 0 auto;
 }
+
 /* СТРАНИЦА ФОТОАЛЬБОМ --- */
 
 /* СТРАНИЦА ВХОДА +++ */
-.auth{
+.auth {
     margin: 100px;
     text-align: center;
     vertical-align: middle;
@@ -375,21 +400,22 @@ html{
 .inputs {
     display: inline-block;
     text-align: left;
-    font-family: 'Roboto',Arial,sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     width: 400px;
     height: 420px;
     background-color: white;
     box-shadow: 0 2px 40px 0 rgb(0 0 0 / 10%);
     border-radius: 4px;
 }
-#login_main_label{
+
+#login_main_label {
     font-size: 27px;
     text-align: center;
     margin-top: 15px;
     padding: 25px;
 }
 
-.login_label{
+.login_label {
     font-size: 20px;
     text-align: left;
     padding-left: 40px;
@@ -397,14 +423,14 @@ html{
     padding-top: 10px;
 }
 
-.input_form{
+.input_form {
     margin-left: 40px;
     width: 80%;
     padding: 12px 20px;
     box-sizing: border-box;
 }
 
-.input_button{
+.input_button {
     margin: 40px;
     background-color: #75859e; /* Green */
     border: none;
@@ -416,10 +442,11 @@ html{
     font-size: 16px;
     width: 80%;
 }
+
 /* СТРАНИЦА ВХОДА --- */
 
 /* РОДИТЕЛЯМ +++ */
-.memo-label{
+.memo-label {
     text-align: center;
     color: black;
     font-family: 'Montserrat', sans-serif;
@@ -428,7 +455,7 @@ html{
     background-color: #75859e;
 }
 
-.to-parents-main-text{
+.to-parents-main-text {
     align-items: center;
     text-align: center;
     margin-left: 20%;
@@ -437,18 +464,19 @@ html{
     font-family: "Manrope", sans-serif;
     font-size: 20px;
 }
-.custom-blockquote{
+
+.custom-blockquote {
     border-left: 4px solid #75859e; /* Линия слева от текста */
     text-align: justify;
     padding-left: 20px;
 }
 
-.expressions{
+.expressions {
     line-height: 1.9;
     text-align: justify;
 }
 
-.expressions li{
+.expressions li {
     list-style-type: none;
 }
 
@@ -458,7 +486,7 @@ html{
     padding-right: 10px; /* Расстояние от маркера до текста */
 }
 
-.poem{
+.poem {
     text-align: center;
     border-bottom: 4px solid #75859e;
     border-top: 4px solid #75859e;
@@ -468,23 +496,143 @@ html{
     margin-bottom: 50px;
 }
 
-.documents{
+.documents {
     margin-top: 40px;
     text-decoration: none;
 }
 
-.documents a{
+.documents a {
     text-decoration: none;
     color: #2a559a;
 }
 
-.document-icon-label{
+.document-icon-label {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.document-icon-label img{
+.document-icon-label img {
     width: 30%;
 }
+
 /* РОДИТЕЛЯМ --- */
+
+/*ПОДГОТОВКА К ОЛИМПИАДАМ +++*/
+
+.olimps-title {
+    margin-left: 50px;
+    margin-top: 30px;
+    font-size: 32px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #7c695b;
+}
+
+/*ПОДГОТОВКА К ОЛИМПИАДАМ ---*/
+
+/*Работа со слабоуспевающими +++*/
+.document-underperforming {
+    position: fixed;
+    left: 40%;
+}
+
+.underperforming-list {
+    padding: 0;
+    list-style: none;
+    line-height: 1.5;
+    text-align: center;
+    left: 50%;
+    align-items: center;
+}
+
+.underperforming-list li {
+    position: relative;
+    padding: 10px 30px;
+    background: linear-gradient(to left, #EFEFEF 0%, #FFF, #EFEFEF);
+    border: 2px solid #C0C0C0;
+    color: #506a6b;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .2);
+    margin-bottom: 5px;
+    text-align: center;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+.underperforming-list li:hover {
+    border: 2px solid #ADCEE9;
+}
+
+.underperforming-list li:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    background: linear-gradient(to left, #93a4bb 0%, #FFF, #75859e);
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.underperforming-list li:hover:before {
+    width: 100%;
+    opacity: 1;
+}
+
+.underperforming-box {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*Работа со слабоуспевающими ---*/
+
+/*ГОСТЕВАЯ КНИГА +++*/
+.comment-form{
+    margin: 20px 30% 20px 30%;
+}
+
+.comment-inputs{
+    display: inline-block;
+    text-align: center;
+    font-family: 'Roboto',Arial,sans-serif;
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    box-shadow: 0 2px 40px 0 rgb(0 0 0 / 10%);
+    border-radius: 4px;
+}
+.comments-list{
+    text-align: center;
+    margin: 20px 10% 20px 10%;
+    padding-top: 20px;
+}
+
+.comment-box{
+    text-align: justify;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    background-color: white;
+    box-shadow: 0 2px 40px 0 rgb(0 0 0 / 10%);
+    border-radius: 2px;
+    padding: 10px 20px 10px 20px;
+    margin: 10px 10% 15px 10%;
+}
+/*ГОСТЕВАЯ КНИГА ---*/
+
+.proverbs-main{
+    text-align: center;
+    margin: 0 30% 0 30%
+}
+
+.proverbs-main ul{
+    text-align: left;
+}

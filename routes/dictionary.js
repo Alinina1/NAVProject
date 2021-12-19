@@ -2,6 +2,8 @@ const {Router} = require('express');
 const router = Router();
 
 router.get('/', (req, res) => {
-   res.render('dictionary');
+    res.set("Content-Security-Policy", "frame-src https://lidrekon.ru;");
+    res.set("Content-Security-Policy", "frame-src https://ufa-all.ru;");
+    res.render('dictionary');
 })
 module.exports = router;
