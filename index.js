@@ -53,7 +53,7 @@ app.use(varMiddleware);
 app.use(userMiddleware);
 
 app.use('/', aboutRoutes);
-app.use('/home', aboutRoutes);
+app.use('/home', homeRoutes);
 app.use('/about', aboutRoutes);
 app.use('/merits', meritsRoutes);
 app.use('/photoalbum', photoalbumRoutes);
@@ -70,7 +70,6 @@ app.use('/extracurricular', extracurricularRoutes);
 app.use('/news', newsRoutes);
 app.use('/book', bookRoutes);
 app.use('/proverbs', proverbsRoutes);
-
 
 async function start() {
     try {

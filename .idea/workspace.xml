@@ -2,25 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6da19577-42ec-4381-b75d-0c781ab4e3a9" name="Changes" comment="add difference from master">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_30_11_2021_0_49__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_30_11_2021_0_49__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/numb.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/about.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/about.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/auth/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/auth/login.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/book.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/book.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/book.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/dictionary.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/dictionary.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/extracurricular.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/extracurricular.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/fizmin.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/fizmin.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/lessons.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/lessons.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/merits.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/merits.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/news.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/news.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/olimps.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/olimps.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/photoalbum.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/photoalbum.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/portfolio.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/portfolio.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/proverbs.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/proverbs.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/toParents.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/toParents.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/underperforming.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/underperforming.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/workProgram.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/workProgram.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,12 +43,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/routes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/models" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\m8rin\Desktop\web\my mom\models" />
       <recent name="C:\Users\m8rin\Desktop\web\my mom\routes" />
       <recent name="C:\Users\m8rin\Desktop\web\my mom\views" />
     </key>
