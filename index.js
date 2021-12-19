@@ -69,6 +69,7 @@ app.use('/lessons', lessonsRoutes);
 app.use('/extracurricular', extracurricularRoutes);
 app.use('/news', newsRoutes);
 app.use('/book', bookRoutes);
+app.use('/proverbs', proverbsRoutes);
 
 
 async function start() {
