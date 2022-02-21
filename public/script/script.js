@@ -1,1 +1,4 @@
-//location.href = "#el"; // скролл вниз при открытии страницы о себе (скрывая навигацию)
+function letComment(){
+    let result  = prompt("Введите 'Да' для отправки комментария");
+    return result === "Да";
+}

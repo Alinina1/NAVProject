@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6da19577-42ec-4381-b75d-0c781ab4e3a9" name="Changes" comment="add difference from master">
-      <change afterPath="$PROJECT_DIR$/models/numb.js" afterDir="false" />
+    <list default="true" id="6da19577-42ec-4381-b75d-0c781ab4e3a9" name="Changes" comment="Перенос сохранений из рабочего компьютера">
+      <change afterPath="$PROJECT_DIR$/public/img/2O76arzrhrQ-removebg-preview (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/2O76arzrhrQ-removebg-preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/photo_main.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_12_2021_15_39_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_12_2021_15_39__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_12_2021_16_23_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_12_2021_16_23__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_30_11_2021_0_49_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_30_11_2021_0_49__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_18_12_2021_15_41_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_18_12_2021_15_41__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_12_2021_13_06_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_12_2021_13_06__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/foto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/photo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/script/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/script/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/about.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/about.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/blocks/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/blocks/header.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/book.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/book.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/merits.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/merits.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +41,14 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -39,11 +61,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ChangesTree.GroupingKeys" value="" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -57,7 +80,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9fa20dac-f2ae-4029-b683-ecefe00a5f67" name="Changes" comment="" />
+      <changelist id="6da19577-42ec-4381-b75d-0c781ab4e3a9" name="Changes" comment="Перенос сохранений из рабочего компьютера" />
       <created>1639588485788</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -66,6 +89,13 @@
       <workItem from="1639634867363" duration="116000" />
       <workItem from="1639638666584" duration="217000" />
       <workItem from="1639645417491" duration="2734000" />
+      <workItem from="1640068916311" duration="32000" />
+      <workItem from="1640069056583" duration="11000" />
+      <workItem from="1640757139349" duration="10132000" />
+      <workItem from="1641791204646" duration="2200000" />
+      <workItem from="1641886950729" duration="27000" />
+      <workItem from="1643374108007" duration="245000" />
+      <workItem from="1645420936687" duration="336000" />
     </task>
     <task id="LOCAL-00001" summary="#4. Переименовать &quot;Мои заслуги&quot; в &quot;Мои достижения&quot;&#10;#5. В разделе &quot;О себе&quot; переименовать &quot;Фотоальбом&quot; на &quot;Портфолио&quot;&#10;#6. Убрать раздел &quot;Тестирование учащихся&quot; (закомментировать)">
       <created>1639595148044</created>
@@ -140,6 +170,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="#4. Переименовать &quot;Мои заслуги&quot; в &quot;Мои достижения&quot;&#10;#5. В разделе &quot;О себе&quot; переименовать &quot;Фотоальбом&quot; на &quot;Портфолио&quot;&#10;#6. Убрать раздел &quot;Тестирование учащихся&quot; (закомментировать)" />
     <MESSAGE value="#11. Страница &quot;Портфолио&quot;" />
     <MESSAGE value="#13. Починить онлайн словарь&#10;#14. Страница &quot;Подготовка к олимпиадам&quot;&#10;#16. Страница &quot;Физминутки...&quot;" />

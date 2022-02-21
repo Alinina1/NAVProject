@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/styles.css"/>
+    <script src="script/script.js"></script>
     <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
     <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
 </head>
@@ -31,7 +32,7 @@
 <!-- /Yandex.Metrika counter -->
 <%- include ('blocks/header.ejs') %>
 <div class="comment-form">
-    <form class="comment-inputs" name="comment" method="POST" action="/book">
+    <form onsubmit="return letComment()" class="comment-inputs" name="comment" method="POST" action="/book">
         <div id="login_main_label" style="margin: 0">Добавьте комментарий</div>
         <input id="guest_name" class="input_form" placeholder="Введите имя" style="margin: 0"
                type="text" name="guest_name" required="required">

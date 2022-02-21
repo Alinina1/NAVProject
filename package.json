@@ -13,7 +13,8 @@
     "express-session": "^1.17.2",
     "helmet": "^4.6.0",
     "materialize-css": "^1.0.0-rc.2",
-    "mongoose": "^6.1.1"
+    "mongoose": "^6.1.1",
+    "prompt": "^1.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.14"

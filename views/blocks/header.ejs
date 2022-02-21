@@ -1,6 +1,7 @@
-<div class="panel">
-    <a class="logo" href="/"></a>
-
+<div class="my-flex-box nav-bar">
+    <div class="logotype">
+        <a href="/"><img src="../img/logo.png"></a>
+    </div>
     <div class="dropdown">
         <button class="dropbtn">О себе</button>
         <div class="dropdown-content">
@@ -23,7 +24,7 @@
         <button class="dropbtn">Учителям</button>
         <div class="dropdown-content">
             <a href="/workProgram">Рабочая программа</a>
-            <a href="/lessons">Разработка уроков</a>
+            <!--<a href="/lessons">Разработка уроков</a>-->
             <a href="/fizmin">Физминутки на башкирском языке</a>
             <a href="/extracurricular">Внеклассная работа</a>
         </div>
@@ -32,7 +33,7 @@
     <a href="/news">Новости</a>
     <a id="guest_book" href="/book">Гостевая книга</a>
     <a id="specialButton"  href="#"><img src="https://lidrekon.ru/images/special.png"
-                                                              alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ"/></a>
+                                         alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ"/></a>
     <% if(isAuth){ %>
         <button class="btn fourth">
             <a href="/auth/logout">Выйти</a>
@@ -43,5 +44,4 @@
             <a href="/auth/login">Войти</a>
         </button>
     <% } %>
-
 </div>

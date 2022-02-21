@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 
 body {
-    /* background-color: #D6C7B2; */
     min-height: 100%;
     margin: 0;
     padding: 0;
@@ -16,24 +15,30 @@ html {
     padding: 0;
 }
 
+@media screen and (max-width: 480px) {
+}
+
 .my-flex-box {
     display: flex;
     flex-direction: row;
 }
 
 /* ШАПКА +++*/
-
-.panel {
-    width: 100%;
+.nav-bar{
+    justify-content: space-between;
     height: 50px;
-    left: 0;
-    top: 0;
     background-color: #D6C7B2;
     border-bottom: 2px solid #494440;
+    padding: 0 2% 0 2%;
+
+    color: #494440;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.panel a {
-    float: left;
+.nav-bar a{
     color: #494440;
     text-align: center;
     padding: 14px 16px;
@@ -41,34 +46,23 @@ html {
     font-size: 17px;
     font-family: 'Montserrat', sans-serif;
 }
-
-.panel a:hover {
-    background-color: #9e8976;
-    color: black;
+.logotype{
+    width: 15%;
 }
 
-.panel .logo:hover {
+.logotype a{
+    padding: 0;
+}
+
+.logotype a img:hover,
+.logotype a:hover{
     background-color: #D6C7B2;
-    color: black;
 }
 
-.panel a.logo {
-    width: 200px;
-    height: 20px;
-    padding-left: 80px;
-    background-image: url("../img/logo.png");
-    background-size: 100px;
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: center;
+.logotype img{
+    height: 100%;
 }
-
 /*Всплывающие окошки + */
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
 .dropdown .dropbtn {
     font-size: 17px;
     border: none;
@@ -80,7 +74,7 @@ html {
     margin: 0;
 }
 
-.panel a:hover, .dropdown:hover .dropbtn {
+.nav-bar a:hover, .dropdown:hover .dropbtn {
     background-color: #9e8976;
 }
 
@@ -88,12 +82,10 @@ html {
     display: none;
     position: absolute;
     background-color: #9e8976;
-    min-width: 160px;
     z-index: 1;
 }
 
 .dropdown-content a {
-    float: none;
     color: white;
     padding: 12px 16px;
     text-decoration: none;
@@ -102,8 +94,8 @@ html {
     font-size: 13px;
 }
 
-.dropdown-content a:hover {
-    background-color: #9e8976;
+.nav-bar .dropdown .dropdown-content a:hover {
+    color: black;
 }
 
 .dropdown:hover .dropdown-content {
@@ -176,18 +168,13 @@ html {
 
 /*страница 1*/
 .page1 {
-    /*background-image: url("../img/school-fon1.jpg");
-    background-size: 100%;
-    height: 709px;
-    background-repeat: repeat-x;
-    */
     background-color: #D6C7B2;
     background-size: auto;
-    height: 300px;
-    position: relative;
+    height: 500px;
 }
 
 .phone1 {
+    width: 50%;
     padding: 2em 1.5em;
     text-decoration: none;
     text-align: left;
@@ -195,7 +182,6 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-size: 60px;
     color: #7c695b;
-    position: absolute;
 }
 
 #fio-anim:hover {
@@ -213,20 +199,20 @@ html {
 }
 
 .photo_main {
-    display: block;
+    width: 50%;
+    text-align: center;
 }
 
 .photo_main img {
-    position: absolute;
     right: 100px;
-    height: 200%;
+    height: 140%;
 }
 
 /*стрaница 2*/
 .page2 {
     display: flex;
     flex-direction: row;
-    margin-top: 200px;
+    margin-top: 50px;
     padding-right: 150px;
     background-color: white;
     height: 450px;
@@ -234,18 +220,8 @@ html {
     align-items: center;
 }
 
-.img2 {
-    width: 30%;
-    padding-left: 80px;
-}
-
-.img2 img {
-    width: 85%;
-}
-
 .poem1 {
-    width: 70%;
-
+    width: 100%;
     text-decoration: none;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -333,7 +309,8 @@ html {
 .merit {
     background-color: white;
     background-size: auto;
-    height: 600px;
+    /*height: 600px;*/
+    padding: 0 0 2% 0;
     margin: 40px;
 }
 
@@ -343,12 +320,13 @@ html {
     font-family: 'Roboto', Arial, sans-serif;
 }
 
-#merit_photo {
-    display: inline;
-    float: left;
-    margin: 50px;
+.merit_photo {
+    overflow: hidden;
+    width: 50%
 }
+.merit_photo img {
 
+}
 #merit_desk {
     display: inline;
     float: right;
