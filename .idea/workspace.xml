@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6da19577-42ec-4381-b75d-0c781ab4e3a9" name="Changes" comment="Перенос сохранений из рабочего компьютера">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gentle-garden-05739" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/about.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/about.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/extracurricular.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/extracurricular.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +47,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -73,7 +75,15 @@
       <workItem from="1641791204646" duration="2200000" />
       <workItem from="1641886950729" duration="27000" />
       <workItem from="1643374108007" duration="245000" />
-      <workItem from="1645420936687" duration="1429000" />
+      <workItem from="1645420936687" duration="2464000" />
+      <workItem from="1645689519707" duration="25000" />
+      <workItem from="1645689714759" duration="597000" />
+      <workItem from="1646230074857" duration="20000" />
+      <workItem from="1646298495849" duration="526000" />
+      <workItem from="1649402974482" duration="1131000" />
+      <workItem from="1651047121915" duration="203000" />
+      <workItem from="1652021319719" duration="51000" />
+      <workItem from="1652346753372" duration="942000" />
     </task>
     <task id="LOCAL-00001" summary="#4. Переименовать &quot;Мои заслуги&quot; в &quot;Мои достижения&quot;&#10;#5. В разделе &quot;О себе&quot; переименовать &quot;Фотоальбом&quot; на &quot;Портфолио&quot;&#10;#6. Убрать раздел &quot;Тестирование учащихся&quot; (закомментировать)">
       <created>1639595148044</created>
@@ -134,7 +144,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="dev" />
                       </list>
                     </value>
                   </entry>
