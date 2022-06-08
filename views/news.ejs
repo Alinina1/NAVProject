@@ -26,33 +26,27 @@
 <div class="memo-label" style="font-size: 25px; ">
     Новости
 </div>
+<% if(isAuth){ %>
+    <div>Добавить новость</div>
+    <form name="news" method="POST" action="/news">
+        <input class="input_form" placeholder="Введите текст новости" style="margin: 0" name="newsText" required="required">
+        <input style="margin: 20px 0 10px 0" class="input_button" type="submit" name="submit_btn" value="Отправить">
+    </form>
+<% } %>
 <div class="comments-list">
+    <% for (const i in news.reverse()) { %>
     <div class="my-flex-box" style="align-items: center">
         <div style="width: 30%">
             <img src="img/news.png" width="30%">
         </div>
         <div class="comment-box" style="width: 70%">
-            <b>19 октября 2021</b> года состоялся школьный тур муниципального этапа
-            межрегиональной олимпиады по башкирскому языку и литературе.<br>
-            В мероприятии приняли участие обучающиеся 7-11 классов.
+            <%= news[i].newsText %>
         </div>
+        <% if(isAuth){ %>
+            <div class="input_button" style="width: 10%" onclick="">Удалить</div>
+        <% } %>
     </div>
-    <div class="my-flex-box" style="align-items: center">
-        <div style="width: 30%">
-            <img src="img/news.png" width="30%">
-        </div>
-        <div class="comment-box" style="width: 70%">
-            <b>17 декабря 2021 года</b> прошел муниципальный этап межрегиональной олимпиады по башкирскому языку
-            и литературе.<br>
-            В мероприятии приняли участие обучающиеся общеобразовательных учреждений Салаватского района,
-            показавшие хорошие результаты в школьном туре олимпиады.<br>
-            Участники олимпиады выполнили три вида работ: тестовые задания по языку, литературе и культуре,
-            сняли видео о себе.<br>
-            Победители и призеры районного тура примут участие в республиканском этапе межрегиональной олимпиады по
-            башкирскому языку и литературе.
-
-        </div>
-    </div>
+    <% } %>
 </div>
 </body>
 

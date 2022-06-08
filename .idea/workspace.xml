@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6da19577-42ec-4381-b75d-0c781ab4e3a9" name="Changes" comment="Перенос сохранений из рабочего компьютера">
+    <list default="true" id="6da19577-42ec-4381-b75d-0c781ab4e3a9" name="Changes" comment="Исправлены мелкие ошибки">
+      <change afterPath="$PROJECT_DIR$/models/news.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/about.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/about.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/extracurricular.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/extracurricular.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/script/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/book.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/news.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/news.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/merits.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/news.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/news.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +36,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="22KZxOWijPs3Uxmnmupfm5of1RP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -45,16 +53,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/models" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\NAVProject\models" />
+      <recent name="C:\Users\User\WebstormProjects\NAVProject\public\owlcarousel" />
+      <recent name="C:\Users\User\WebstormProjects\NAVProject\public\script" />
       <recent name="C:\Users\m8rin\Desktop\web\my mom\models" />
       <recent name="C:\Users\m8rin\Desktop\web\my mom\routes" />
-      <recent name="C:\Users\m8rin\Desktop\web\my mom\views" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -83,7 +93,12 @@
       <workItem from="1649402974482" duration="1131000" />
       <workItem from="1651047121915" duration="203000" />
       <workItem from="1652021319719" duration="51000" />
-      <workItem from="1652346753372" duration="942000" />
+      <workItem from="1652346753372" duration="5712000" />
+      <workItem from="1653302287045" duration="400000" />
+      <workItem from="1653665141665" duration="739000" />
+      <workItem from="1653825698339" duration="1877000" />
+      <workItem from="1653933756270" duration="3000" />
+      <workItem from="1654684958243" duration="2447000" />
     </task>
     <task id="LOCAL-00001" summary="#4. Переименовать &quot;Мои заслуги&quot; в &quot;Мои достижения&quot;&#10;#5. В разделе &quot;О себе&quot; переименовать &quot;Фотоальбом&quot; на &quot;Портфолио&quot;&#10;#6. Убрать раздел &quot;Тестирование учащихся&quot; (закомментировать)">
       <created>1639595148044</created>
@@ -127,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639925463569</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Исправлены мелкие ошибки">
+      <created>1652352468878</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1652352468878</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +187,7 @@
     <MESSAGE value="Подготовка всех страниц 1" />
     <MESSAGE value="#3. Вёрстка оставшихся страниц, данные из облака яндекс диск" />
     <MESSAGE value="add difference from master" />
-    <option name="LAST_COMMIT_MESSAGE" value="add difference from master" />
+    <MESSAGE value="Исправлены мелкие ошибки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправлены мелкие ошибки" />
   </component>
 </project>
