@@ -1,6 +1,5 @@
 const {Router} = require('express');
 const News  = require('../models/news');
-const Comment = require("../models/comments");
 const router = Router();
 
 router.get('/', async (req, res) => {

@@ -4,7 +4,6 @@ const helmet = require('helmet');
 const compression = require('compression');
 const session = require('express-session');
 const MongoStore = require('connect-mongodb-session')(session);
-const User = require('./models/user')
 const userMiddleware = require('./middleware/user')
 const varMiddleware = require('./middleware/variables');
 const bodyParser = require('body-parser');
@@ -78,6 +77,7 @@ async function start() {
         await mongoose.connect(keys.MONGODB_URI, {
             useNewUrlParser: true
         });
+
         app.set('port', (process.env.PORT || 3000));
         app.listen(app.get('port'), () => console.log('Server is running'));
     } catch (e) {
