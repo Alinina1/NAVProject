@@ -1,13 +1,13 @@
 const express = require('express');
-const mongoose = require('mongoose');//база данных mongo db
+// const mongoose = require('mongoose');//база данных mongo db
 const helmet = require('helmet');
 const compression = require('compression');
-const session = require('express-session');
-const MongoStore = require('connect-mongodb-session')(session);
+// const session = require('express-session');
+// const MongoStore = require('connect-mongodb-session')(session);
 const userMiddleware = require('./middleware/user')
 const varMiddleware = require('./middleware/variables');
 const bodyParser = require('body-parser');
-const keys = require('./keys')
+// const keys = require('./keys')
 
 //routes
 const dictionaryRoutes = require('./routes/dictionary');
