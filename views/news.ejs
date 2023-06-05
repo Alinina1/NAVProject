@@ -26,7 +26,7 @@
 <div class="memo-label" style="font-size: 25px; ">
     Новости
 </div>
-<% if(isAuth){ %>
+<% if(false){ %>
     <div>Добавить новость</div>
     <form name="news" method="POST" action="/news">
         <input class="input_form" placeholder="Введите текст новости" style="margin: 0" name="newsText" required="required">
@@ -42,7 +42,7 @@
         <div class="comment-box" style="width: 70%">
             <%= news[i].newsText %>
         </div>
-        <% if(isAuth){ %>
+        <% if(false){ %>
             <div class="input_button" style="width: 10%" onclick="">Удалить</div>
         <% } %>
     </div>
