@@ -3,9 +3,9 @@ const express = require('express');
 const helmet = require('helmet');
 const compression = require('compression');
 // const session = require('express-session');
-// const MongoStore = require('connect-mongodb-session')(session);
-const userMiddleware = require('./middleware/user')
-const varMiddleware = require('./middleware/variables');
+// // const MongoStore = require('connect-mongodb-session')(session);
+// const userMiddleware = require('./middleware/user')
+// const varMiddleware = require('./middleware/variables');
 const bodyParser = require('body-parser');
 // const keys = require('./keys')
 
@@ -47,9 +47,9 @@ app.use(express.static(__dirname + '/public/'));
 //     resave: false,
 //     saveUninitialized: false,
 //     store
-// }));
-app.use(varMiddleware);
-app.use(userMiddleware);
+// // }));
+// app.use(varMiddleware);
+// app.use(userMiddleware);
 
 app.use('/', aboutRoutes);
 app.use('/home', homeRoutes);
