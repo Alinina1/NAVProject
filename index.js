@@ -30,10 +30,10 @@ const proverbsRoutes = require('./routes/proverbs');
 
 const app = express();
 //6wBTWeWDZTWbXE9
-const store = MongoStore({
-    collection: 'sessions',
-    uri: keys.MONGODB_URI,
-});
+// const store = MongoStore({
+//     collection: 'sessions',
+//     uri: keys.MONGODB_URI,
+// });
 
 app.set('view engine', 'ejs');
 
@@ -42,12 +42,12 @@ app.use(express.json());
 app.use(helmet());
 app.use(compression());
 app.use(express.static(__dirname + '/public/'));
-app.use(session({
-    secret: keys.SESSION_SECRET,
-    resave: false,
-    saveUninitialized: false,
-    store
-}));
+// app.use(session({
+//     secret: keys.SESSION_SECRET,
+//     resave: false,
+//     saveUninitialized: false,
+//     store
+// }));
 app.use(varMiddleware);
 app.use(userMiddleware);
 
@@ -74,9 +74,9 @@ async function start() {
     try {
         //const password = "6wBTWeWDZTWbXE9";
 
-        await mongoose.connect(keys.MONGODB_URI, {
-            useNewUrlParser: true
-        });
+        // await mongoose.connect(keys.MONGODB_URI, {
+        //     useNewUrlParser: true
+        // });
 
         app.set('port', (process.env.PORT || 3000));
         app.listen(app.get('port'), () => console.log('Server is running'));
